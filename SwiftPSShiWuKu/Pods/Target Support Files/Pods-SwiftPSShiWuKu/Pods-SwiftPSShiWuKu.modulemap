@@ -1,0 +1,6 @@
+framework module Pods_SwiftPSShiWuKu {
+  umbrella header "Pods-SwiftPSShiWuKu-umbrella.h"
+
+  export *
+  module * { export * }
+}

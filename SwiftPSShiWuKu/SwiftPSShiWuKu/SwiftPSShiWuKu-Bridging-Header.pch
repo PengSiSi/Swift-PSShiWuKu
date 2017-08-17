@@ -1,0 +1,15 @@
+//
+//  SwiftPSShiWuKu-Bridging-Header.pch
+//  SwiftPSShiWuKu
+//
+//  Created by 思 彭 on 2017/8/17.
+//  Copyright © 2017年 思 彭. All rights reserved.
+//
+
+#ifndef SwiftPSShiWuKu_Bridging_Header_pch
+#define SwiftPSShiWuKu_Bridging_Header_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SwiftPSShiWuKu_Bridging_Header_pch */
