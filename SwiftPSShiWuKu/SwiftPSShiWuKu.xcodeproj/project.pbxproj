@@ -57,6 +57,17 @@
 		F15CBE321F45474100BFEF23 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBE311F45474100BFEF23 /* HomeViewController.swift */; };
 		F15CBE341F45474C00BFEF23 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBE331F45474C00BFEF23 /* MineViewController.swift */; };
 		F15CBE361F45475700BFEF23 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBE351F45475700BFEF23 /* FeedViewController.swift */; };
+		F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBE4E1F45931D00BFEF23 /* MineHeaderView.swift */; };
+		F15CBE511F45950C00BFEF23 /* MineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15CBE501F45950C00BFEF23 /* MineHeaderView.xib */; };
+		F15CBE531F459B7500BFEF23 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBE521F459B7500BFEF23 /* HomeHeaderView.swift */; };
+		F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */; };
+		F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */; };
+		F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32111F5112DC004EA52C /* SearchBarView.swift */; };
+		F1FF1CF91F5008D100BBD605 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CF81F5008D100BBD605 /* LoginViewController.swift */; };
+		F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CFA1F500CDA00BBD605 /* CustomButton.swift */; };
+		F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CFC1F5012C900BBD605 /* RegisterViewController.swift */; };
+		F1FF1CFF1F501AA500BBD605 /* CountDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CFE1F501AA500BBD605 /* CountDownButton.swift */; };
+		F1FF1D011F5020BB00BBD605 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1D001F5020BB00BBD605 /* FeedListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +158,17 @@
 		F15CBE311F45474100BFEF23 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F15CBE331F45474C00BFEF23 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F15CBE351F45475700BFEF23 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F15CBE4E1F45931D00BFEF23 /* MineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
+		F15CBE501F45950C00BFEF23 /* MineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineHeaderView.xib; sourceTree = "<group>"; };
+		F15CBE521F459B7500BFEF23 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		F1EF32111F5112DC004EA52C /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		F1FF1CF81F5008D100BBD605 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F1FF1CFA1F500CDA00BBD605 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F1FF1CFC1F5012C900BBD605 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F1FF1CFE1F501AA500BBD605 /* CountDownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownButton.swift; sourceTree = "<group>"; };
+		F1FF1D001F5020BB00BBD605 /* FeedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -572,6 +594,7 @@
 			isa = PBXGroup;
 			children = (
 				F15CBE351F45475700BFEF23 /* FeedViewController.swift */,
+				F1FF1D001F5020BB00BBD605 /* FeedListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -618,6 +641,8 @@
 		F15CBE1C1F45471900BFEF23 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F15CBE521F459B7500BFEF23 /* HomeHeaderView.swift */,
+				F1EF32111F5112DC004EA52C /* SearchBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -635,6 +660,8 @@
 		F15CBE1E1F45471900BFEF23 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F1FF1CF81F5008D100BBD605 /* LoginViewController.swift */,
+				F1FF1CFC1F5012C900BBD605 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -649,6 +676,8 @@
 		F15CBE201F45471900BFEF23 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F1FF1CFA1F500CDA00BBD605 /* CustomButton.swift */,
+				F1FF1CFE1F501AA500BBD605 /* CountDownButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -700,6 +729,7 @@
 			isa = PBXGroup;
 			children = (
 				F15CBE331F45474C00BFEF23 /* MineViewController.swift */,
+				F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -714,6 +744,9 @@
 		F15CBE2A1F45471900BFEF23 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F15CBE4E1F45931D00BFEF23 /* MineHeaderView.swift */,
+				F15CBE501F45950C00BFEF23 /* MineHeaderView.xib */,
+				F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -868,6 +901,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15CBE511F45950C00BFEF23 /* MineHeaderView.xib in Resources */,
 				F15CBDC11F45458D00BFEF23 /* YMSharePlist.plist in Resources */,
 				F11355121F42E958003CBF4E /* LaunchScreen.storyboard in Resources */,
 				F113550F1F42E958003CBF4E /* Assets.xcassets in Resources */,
@@ -1038,8 +1072,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15CBDB61F45458D00BFEF23 /* UIImage+Extension.swift in Sources */,
+				F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */,
 				F15CBDF91F45458D00BFEF23 /* HTTPTool.swift in Sources */,
+				F1FF1CF91F5008D100BBD605 /* LoginViewController.swift in Sources */,
+				F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */,
 				F15CBDF71F45458D00BFEF23 /* AppInfoTool.swift in Sources */,
+				F1FF1CFF1F501AA500BBD605 /* CountDownButton.swift in Sources */,
 				F15CBDFA1F45458D00BFEF23 /* PageContentView.swift in Sources */,
 				F15CBDBC1F45458D00BFEF23 /* Const.swift in Sources */,
 				F15CBDFD1F45458D00BFEF23 /* SpaceSizeTool.swift in Sources */,
@@ -1052,6 +1090,7 @@
 				F15CBDFB1F45458D00BFEF23 /* PageTitleView.swift in Sources */,
 				F15CBDB71F45458D00BFEF23 /* UIImageView+Extension.swift in Sources */,
 				F15CBE011F45458D00BFEF23 /* WMProgressView.m in Sources */,
+				F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */,
 				F15CBE361F45475700BFEF23 /* FeedViewController.swift in Sources */,
 				F15CBDFE1F45458D00BFEF23 /* WMFooldView.m in Sources */,
 				F15CBDB51F45458D00BFEF23 /* UIDevice+Extension.swift in Sources */,
@@ -1063,16 +1102,21 @@
 				F15CBDBD1F45458D00BFEF23 /* UtilsMacro.swift in Sources */,
 				F15CBDB31F45458D00BFEF23 /* UIBarButtonItem+Extension.swift in Sources */,
 				F15CBDAE1F45458D00BFEF23 /* Array+Extension.swift in Sources */,
+				F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */,
 				F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */,
 				F15CBE2F1F45471900BFEF23 /* IntroduceViewController.swift in Sources */,
 				F15CBDB21F45458D00BFEF23 /* UIApplication+Extension.swift in Sources */,
 				F15CBDF81F45458D00BFEF23 /* CommonTool.swift in Sources */,
+				F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */,
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
 				F15CBE031F45458D00BFEF23 /* WMPageController.m in Sources */,
 				F15CBDFC1F45458D00BFEF23 /* RequestFailedView.swift in Sources */,
 				F15CBDBB1F45458D00BFEF23 /* UIView+Frame.swift in Sources */,
 				F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */,
+				F15CBE531F459B7500BFEF23 /* HomeHeaderView.swift in Sources */,
+				F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */,
 				F15CBDAF1F45458D00BFEF23 /* Dictionary+Extension.swift in Sources */,
+				F1FF1D011F5020BB00BBD605 /* FeedListViewController.swift in Sources */,
 				F15CBE341F45474C00BFEF23 /* MineViewController.swift in Sources */,
 				F15CBDB01F45458D00BFEF23 /* NSDate+Extension.swift in Sources */,
 			);
@@ -1227,6 +1271,7 @@
 			baseConfigurationReference = 169621CE81F19D6FB650324B /* Pods-SwiftPSShiWuKu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = RN6253B2FZ;
 				INFOPLIST_FILE = SwiftPSShiWuKu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1241,6 +1286,7 @@
 			baseConfigurationReference = 643D933DC54D150A8ADD83D9 /* Pods-SwiftPSShiWuKu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = RN6253B2FZ;
 				INFOPLIST_FILE = SwiftPSShiWuKu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

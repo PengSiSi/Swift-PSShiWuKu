@@ -99,9 +99,22 @@ func YMColor(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
     return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)
 }
 
+// 主色 黄色
+func MainColor() -> UIColor {
+    return UIColor.init(234, 134, 77)
+}
+
 /// 背景灰色
 func GlobalColor() -> UIColor {
-    return UIColor.init(245, 245, 245, 1)
+    return UIColor.init(246, 246, 246, 1)
+}
+
+func RegisterButtonColor() -> UIColor {
+    return UIColor.init(255, 90, 95, 1)
+}
+
+func CountDownColor() -> UIColor {
+    return UIColor.init(76, 217, 99, 1)
 }
 
 /// 红色
