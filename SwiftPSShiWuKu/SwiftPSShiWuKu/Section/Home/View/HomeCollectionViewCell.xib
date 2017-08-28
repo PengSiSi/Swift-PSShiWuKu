@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="SwiftPSShiWuKu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="84" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="84" height="93"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5go-FJ-4Cn">
+                        <rect key="frame" x="17" y="5" width="50" height="50"/>
+                        <color key="backgroundColor" red="1" green="0.38236766630000002" blue="0.34146211700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Uo5-5L-htf"/>
+                            <constraint firstAttribute="width" constant="50" id="iWd-iy-639"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="米饭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1f-Qt-Ki1">
+                        <rect key="frame" x="22" y="70" width="35" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5go-FJ-4Cn" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9HX-MH-PSH"/>
+                <constraint firstAttribute="bottom" secondItem="p1f-Qt-Ki1" secondAttribute="bottom" constant="5" id="WRA-tP-Xl3"/>
+                <constraint firstItem="p1f-Qt-Ki1" firstAttribute="top" secondItem="5go-FJ-4Cn" secondAttribute="bottom" constant="15" id="gOG-rd-fAp"/>
+                <constraint firstItem="p1f-Qt-Ki1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="22" id="gyL-CM-I3O"/>
+                <constraint firstItem="5go-FJ-4Cn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="qL0-ln-mrD"/>
+                <constraint firstAttribute="trailing" secondItem="p1f-Qt-Ki1" secondAttribute="trailing" constant="27" id="qUE-I2-8fm"/>
+            </constraints>
+            <size key="customSize" width="84" height="93"/>
+            <point key="canvasLocation" x="51" y="75.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

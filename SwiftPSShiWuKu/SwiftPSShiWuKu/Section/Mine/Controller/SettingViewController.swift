@@ -36,9 +36,24 @@ class SettingViewController: BaseViewController {
         tableView?.delegate = self
         tableView?.dataSource = self
         self.view.addSubview(tableView!)
-        tableView?.tableFooterView = UIView()
+        tableView?.tableFooterView = setupFooterView()
         tableView?.tableHeaderView = UIView()
         tableView?.register(SettingTableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    func setupFooterView() -> UIView {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: k_ScreenWidth, height: 44))
+        let logOutButton = UIButton(frame: CGRect(x: 20, y: 0, width: k_ScreenWidth - 40, height: 44))
+        logOutButton.backgroundColor = UIColor.red
+        logOutButton.setTitle("退出登录", for: .normal)
+        logOutButton.addTarget(self, action: #selector(logout), for: .touchUpInside)
+        footerView.addSubview(logOutButton)
+        return footerView
+    }
+    
+    func logout() {
+        let logginVc = LoginViewController()
+        self.navigationController?.pushViewController(logginVc, animated: true)
     }
 }
 

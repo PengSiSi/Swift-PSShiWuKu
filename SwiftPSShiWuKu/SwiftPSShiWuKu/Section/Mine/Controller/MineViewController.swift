@@ -108,8 +108,9 @@ extension MineViewController {
     
     func loginButtonDidClick() {
         print("登录");
-        let loginVc = LoginViewController()
-        self.navigationController?.pushViewController(loginVc, animated: true)
+//        let loginVc = LoginViewController()
+        let personInfoVc = PersonInfoViewController()
+        self.navigationController?.pushViewController(personInfoVc, animated: true)
     }
     
     func settingButtonDidClick() {

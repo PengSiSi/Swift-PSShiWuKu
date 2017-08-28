@@ -60,14 +60,30 @@
 		F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBE4E1F45931D00BFEF23 /* MineHeaderView.swift */; };
 		F15CBE511F45950C00BFEF23 /* MineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15CBE501F45950C00BFEF23 /* MineHeaderView.xib */; };
 		F15CBE531F459B7500BFEF23 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBE521F459B7500BFEF23 /* HomeHeaderView.swift */; };
+		F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */; };
+		F15D88BE1F5240AF00C4CB00 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */; };
+		F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */; };
+		F1CA64371F53FDFF00B6582D /* FeedHomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64361F53FDFF00B6582D /* FeedHomeListViewController.swift */; };
+		F1CA64391F53FE2E00B6582D /* FeedKnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64381F53FE2E00B6582D /* FeedKnowledgeViewController.swift */; };
+		F1CA643B1F53FE4A00B6582D /* FeedDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA643A1F53FE4A00B6582D /* FeedDecisionViewController.swift */; };
+		F1CA643D1F53FE5900B6582D /* FeedEvaluateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA643C1F53FE5900B6582D /* FeedEvaluateViewController.swift */; };
+		F1CA64401F53FFA800B6582D /* FeedEvaluateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA643E1F53FFA800B6582D /* FeedEvaluateCell.swift */; };
+		F1CA64411F53FFA800B6582D /* FeedEvaluateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CA643F1F53FFA800B6582D /* FeedEvaluateCell.xib */; };
+		F1CA64431F54038500B6582D /* FeedEvaluateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64421F54038500B6582D /* FeedEvaluateModel.swift */; };
+		F1CA64451F540D0600B6582D /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64441F540D0600B6582D /* FeedDetailViewController.swift */; };
+		F1CA64471F540DFB00B6582D /* FeedDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64461F540DFB00B6582D /* FeedDetailBottomView.swift */; };
 		F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */; };
 		F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */; };
 		F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32111F5112DC004EA52C /* SearchBarView.swift */; };
+		F1EF32141F514AAC004EA52C /* HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32131F514AAC004EA52C /* HomeSectionHeaderView.swift */; };
+		F1EF32161F514F0C004EA52C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32151F514F0C004EA52C /* HomeTableViewCell.swift */; };
+		F1EF32181F51627D004EA52C /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32171F51627D004EA52C /* CategoryModel.swift */; };
+		F1EF321A1F516287004EA52C /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32191F516287004EA52C /* GroupModel.swift */; };
+		F1EF321C1F51641B004EA52C /* SubCategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF321B1F51641B004EA52C /* SubCategoriesModel.swift */; };
 		F1FF1CF91F5008D100BBD605 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CF81F5008D100BBD605 /* LoginViewController.swift */; };
 		F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CFA1F500CDA00BBD605 /* CustomButton.swift */; };
 		F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CFC1F5012C900BBD605 /* RegisterViewController.swift */; };
 		F1FF1CFF1F501AA500BBD605 /* CountDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CFE1F501AA500BBD605 /* CountDownButton.swift */; };
-		F1FF1D011F5020BB00BBD605 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1D001F5020BB00BBD605 /* FeedListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,14 +177,30 @@
 		F15CBE4E1F45931D00BFEF23 /* MineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
 		F15CBE501F45950C00BFEF23 /* MineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineHeaderView.xib; sourceTree = "<group>"; };
 		F15CBE521F459B7500BFEF23 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		F1CA64361F53FDFF00B6582D /* FeedHomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeListViewController.swift; sourceTree = "<group>"; };
+		F1CA64381F53FE2E00B6582D /* FeedKnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedKnowledgeViewController.swift; sourceTree = "<group>"; };
+		F1CA643A1F53FE4A00B6582D /* FeedDecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDecisionViewController.swift; sourceTree = "<group>"; };
+		F1CA643C1F53FE5900B6582D /* FeedEvaluateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedEvaluateViewController.swift; sourceTree = "<group>"; };
+		F1CA643E1F53FFA800B6582D /* FeedEvaluateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedEvaluateCell.swift; sourceTree = "<group>"; };
+		F1CA643F1F53FFA800B6582D /* FeedEvaluateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedEvaluateCell.xib; sourceTree = "<group>"; };
+		F1CA64421F54038500B6582D /* FeedEvaluateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedEvaluateModel.swift; sourceTree = "<group>"; };
+		F1CA64441F540D0600B6582D /* FeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		F1CA64461F540DFB00B6582D /* FeedDetailBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailBottomView.swift; sourceTree = "<group>"; };
 		F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		F1EF32111F5112DC004EA52C /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		F1EF32131F514AAC004EA52C /* HomeSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderView.swift; sourceTree = "<group>"; };
+		F1EF32151F514F0C004EA52C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F1EF32171F51627D004EA52C /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		F1EF32191F516287004EA52C /* GroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		F1EF321B1F51641B004EA52C /* SubCategoriesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoriesModel.swift; sourceTree = "<group>"; };
 		F1FF1CF81F5008D100BBD605 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F1FF1CFA1F500CDA00BBD605 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F1FF1CFC1F5012C900BBD605 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F1FF1CFE1F501AA500BBD605 /* CountDownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownButton.swift; sourceTree = "<group>"; };
-		F1FF1D001F5020BB00BBD605 /* FeedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -594,7 +626,11 @@
 			isa = PBXGroup;
 			children = (
 				F15CBE351F45475700BFEF23 /* FeedViewController.swift */,
-				F1FF1D001F5020BB00BBD605 /* FeedListViewController.swift */,
+				F1CA64361F53FDFF00B6582D /* FeedHomeListViewController.swift */,
+				F1CA64381F53FE2E00B6582D /* FeedKnowledgeViewController.swift */,
+				F1CA643C1F53FE5900B6582D /* FeedEvaluateViewController.swift */,
+				F1CA643A1F53FE4A00B6582D /* FeedDecisionViewController.swift */,
+				F1CA64441F540D0600B6582D /* FeedDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -602,6 +638,7 @@
 		F15CBE171F45471900BFEF23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F1CA64421F54038500B6582D /* FeedEvaluateModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -609,6 +646,9 @@
 		F15CBE181F45471900BFEF23 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F1CA643E1F53FFA800B6582D /* FeedEvaluateCell.swift */,
+				F1CA643F1F53FFA800B6582D /* FeedEvaluateCell.xib */,
+				F1CA64461F540DFB00B6582D /* FeedDetailBottomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -634,6 +674,9 @@
 		F15CBE1B1F45471900BFEF23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F1EF32171F51627D004EA52C /* CategoryModel.swift */,
+				F1EF321B1F51641B004EA52C /* SubCategoriesModel.swift */,
+				F1EF32191F516287004EA52C /* GroupModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -643,6 +686,10 @@
 			children = (
 				F15CBE521F459B7500BFEF23 /* HomeHeaderView.swift */,
 				F1EF32111F5112DC004EA52C /* SearchBarView.swift */,
+				F1EF32131F514AAC004EA52C /* HomeSectionHeaderView.swift */,
+				F1EF32151F514F0C004EA52C /* HomeTableViewCell.swift */,
+				F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */,
+				F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -730,6 +777,7 @@
 			children = (
 				F15CBE331F45474C00BFEF23 /* MineViewController.swift */,
 				F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */,
+				F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -905,6 +953,8 @@
 				F15CBDC11F45458D00BFEF23 /* YMSharePlist.plist in Resources */,
 				F11355121F42E958003CBF4E /* LaunchScreen.storyboard in Resources */,
 				F113550F1F42E958003CBF4E /* Assets.xcassets in Resources */,
+				F1CA64411F53FFA800B6582D /* FeedEvaluateCell.xib in Resources */,
+				F15D88BE1F5240AF00C4CB00 /* HomeCollectionViewCell.xib in Resources */,
 				F15CBDBF1F45458D00BFEF23 /* YMMineCellPlist.plist in Resources */,
 				F113550D1F42E958003CBF4E /* Main.storyboard in Resources */,
 				F15CBDC01F45458D00BFEF23 /* YMSettingPlist.plist in Resources */,
@@ -1074,20 +1124,29 @@
 				F15CBDB61F45458D00BFEF23 /* UIImage+Extension.swift in Sources */,
 				F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */,
 				F15CBDF91F45458D00BFEF23 /* HTTPTool.swift in Sources */,
+				F1CA64451F540D0600B6582D /* FeedDetailViewController.swift in Sources */,
 				F1FF1CF91F5008D100BBD605 /* LoginViewController.swift in Sources */,
+				F1EF32181F51627D004EA52C /* CategoryModel.swift in Sources */,
+				F1CA64391F53FE2E00B6582D /* FeedKnowledgeViewController.swift in Sources */,
+				F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */,
+				F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */,
 				F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */,
 				F15CBDF71F45458D00BFEF23 /* AppInfoTool.swift in Sources */,
 				F1FF1CFF1F501AA500BBD605 /* CountDownButton.swift in Sources */,
 				F15CBDFA1F45458D00BFEF23 /* PageContentView.swift in Sources */,
+				F1EF321A1F516287004EA52C /* GroupModel.swift in Sources */,
 				F15CBDBC1F45458D00BFEF23 /* Const.swift in Sources */,
 				F15CBDFD1F45458D00BFEF23 /* SpaceSizeTool.swift in Sources */,
 				F15CBDB11F45458D00BFEF23 /* String+Extension.swift in Sources */,
+				F1CA64401F53FFA800B6582D /* FeedEvaluateCell.swift in Sources */,
+				F1EF321C1F51641B004EA52C /* SubCategoriesModel.swift in Sources */,
 				F15CBE321F45474100BFEF23 /* HomeViewController.swift in Sources */,
 				F15CBDFF1F45458D00BFEF23 /* WMMenuItem.m in Sources */,
 				F15CBDB81F45458D00BFEF23 /* UITableView+Extension.swift in Sources */,
 				F15CBDB91F45458D00BFEF23 /* UITableViewCell+Extension.swift in Sources */,
 				F15CBE301F45471900BFEF23 /* MainTabBarController.swift in Sources */,
 				F15CBDFB1F45458D00BFEF23 /* PageTitleView.swift in Sources */,
+				F1CA643B1F53FE4A00B6582D /* FeedDecisionViewController.swift in Sources */,
 				F15CBDB71F45458D00BFEF23 /* UIImageView+Extension.swift in Sources */,
 				F15CBE011F45458D00BFEF23 /* WMProgressView.m in Sources */,
 				F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */,
@@ -1095,17 +1154,21 @@
 				F15CBDFE1F45458D00BFEF23 /* WMFooldView.m in Sources */,
 				F15CBDB51F45458D00BFEF23 /* UIDevice+Extension.swift in Sources */,
 				F15CBE001F45458D00BFEF23 /* WMMenuView.m in Sources */,
+				F1EF32141F514AAC004EA52C /* HomeSectionHeaderView.swift in Sources */,
 				F15CBE021F45458D00BFEF23 /* WMScrollView.m in Sources */,
 				F15CBDBA1F45458D00BFEF23 /* UIView+Extension.swift in Sources */,
 				F15CBDB41F45458D00BFEF23 /* UIColor+Color.swift in Sources */,
 				F15CBDF61F45458D00BFEF23 /* AlertView.swift in Sources */,
 				F15CBDBD1F45458D00BFEF23 /* UtilsMacro.swift in Sources */,
+				F1CA64431F54038500B6582D /* FeedEvaluateModel.swift in Sources */,
+				F1CA64471F540DFB00B6582D /* FeedDetailBottomView.swift in Sources */,
 				F15CBDB31F45458D00BFEF23 /* UIBarButtonItem+Extension.swift in Sources */,
 				F15CBDAE1F45458D00BFEF23 /* Array+Extension.swift in Sources */,
 				F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */,
 				F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */,
 				F15CBE2F1F45471900BFEF23 /* IntroduceViewController.swift in Sources */,
 				F15CBDB21F45458D00BFEF23 /* UIApplication+Extension.swift in Sources */,
+				F1EF32161F514F0C004EA52C /* HomeTableViewCell.swift in Sources */,
 				F15CBDF81F45458D00BFEF23 /* CommonTool.swift in Sources */,
 				F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */,
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
@@ -1115,9 +1178,10 @@
 				F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */,
 				F15CBE531F459B7500BFEF23 /* HomeHeaderView.swift in Sources */,
 				F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */,
+				F1CA64371F53FDFF00B6582D /* FeedHomeListViewController.swift in Sources */,
 				F15CBDAF1F45458D00BFEF23 /* Dictionary+Extension.swift in Sources */,
-				F1FF1D011F5020BB00BBD605 /* FeedListViewController.swift in Sources */,
 				F15CBE341F45474C00BFEF23 /* MineViewController.swift in Sources */,
+				F1CA643D1F53FE5900B6582D /* FeedEvaluateViewController.swift in Sources */,
 				F15CBDB01F45458D00BFEF23 /* NSDate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

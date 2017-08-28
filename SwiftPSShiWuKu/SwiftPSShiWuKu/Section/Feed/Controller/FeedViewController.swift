@@ -12,7 +12,10 @@ import PagingMenuController
 //分页菜单配置
 private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     // 子视图控制器
-    private let feedListVc = FeedListViewController()
+    private let feedHomeListVc = FeedHomeListViewController()
+    private let feedDesicionListVc = FeedDecisionViewController()
+    private let feedKnowledgeListVc = FeedKnowledgeViewController()
+    private let feedEvaluateListVc = FeedEvaluateViewController()
     //组件类型
     fileprivate var componentType: ComponentType {
         return .all(menuOptions: MenuOptions(), pagingControllers: pagingControllers)
@@ -20,7 +23,7 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     
     //所有子视图控制器
     fileprivate var pagingControllers: [UIViewController] {
-        return [feedListVc, feedListVc, feedListVc, feedListVc]
+        return [feedHomeListVc, feedEvaluateListVc, feedKnowledgeListVc, feedDesicionListVc]
     }
     
     // 注意这个一定要加,不然默认只加载两个控制器,多于两个则会崩溃

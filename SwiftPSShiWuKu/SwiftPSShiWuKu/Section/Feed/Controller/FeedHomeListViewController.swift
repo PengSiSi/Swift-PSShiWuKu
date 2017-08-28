@@ -1,14 +1,14 @@
 //
-//  FeedListViewController.swift
+//  FeedHomeListViewController.swift
 //  SwiftPSShiWuKu
 //
-//  Created by 思 彭 on 2017/8/25.
+//  Created by 思 彭 on 2017/8/28.
 //  Copyright © 2017年 思 彭. All rights reserved.
-//
+// Feed -> 首页
 
 import UIKit
 
-class FeedListViewController: BaseViewController {
+class FeedHomeListViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
