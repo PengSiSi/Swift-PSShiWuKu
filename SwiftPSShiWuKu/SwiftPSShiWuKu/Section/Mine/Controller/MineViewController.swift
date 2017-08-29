@@ -76,6 +76,7 @@ extension MineViewController {
         cell.imageView?.image = UIImage(named: imageNameArr[indexPath.row])
         cell.textLabel?.text = titleArr[indexPath.row]
         cell.textLabel?.font = UIFont.systemFont(ofSize: 15)
+        cell.selectionStyle = .none
         return cell
     }
     

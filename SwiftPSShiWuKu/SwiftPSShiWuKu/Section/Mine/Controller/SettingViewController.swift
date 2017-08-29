@@ -70,6 +70,7 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(title: titleArray?[indexPath.row], subTitle: contentArray?[indexPath.row])
 //        cell.title = self.titleArray?[indexPath.row]
 //        cell.subTitle = self.contentArray?[indexPath.row]
+        cell.selectionStyle = .none
         if indexPath.row == 0 {
             cell.subTitleLabel?.textColor = UIColor.red
         }

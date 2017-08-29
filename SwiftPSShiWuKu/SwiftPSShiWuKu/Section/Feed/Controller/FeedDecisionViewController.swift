@@ -7,29 +7,100 @@
 // Feed -> 美食
 
 import UIKit
+import ObjectMapper
 
 class FeedDecisionViewController: BaseViewController {
-
+    
+    var tableView: UITableView?
+    var dataArray:[FeedKnowledageModel] = [FeedKnowledageModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupUI()
+        loadData()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setupUI() {
+        tableView = UITableView(frame: self.view.bounds, style: .plain)
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        self.view.addSubview(tableView!)
+        tableView?.tableFooterView = UIView()
+        tableView?.tableHeaderView = UIView()
+        //        tableView?.register( UINib(nibName: "FeedEvaluateCell", bundle: nil), forCellReuseIdentifier: "FeedEvaluateCell")
+        tableView?.register(FeedKnowledgeCell.self, forCellReuseIdentifier: "cell")
+        tableView?.register(FeedKnowledageMultiImageCell.self, forCellReuseIdentifier: "FeedKnowledageMultiImageCell")
     }
-    */
+}
 
+// MARK: 数据请求
+extension FeedDecisionViewController {
+    
+    func loadData() {
+        
+        // http://food.boohee.com/fb/v1/feeds/category_feed?category=2&page=1
+        let url = "http://food.boohee.com/fb/v1/feeds/category_feed?category=4&page=1"
+        HTTPTool.shareInstance.requestData(.GET, URLString: url, parameters: nil, success: { (response) in
+            print("response = \(response)")
+            // json转model
+            // 闭包里面需要self
+            // 注意: 注意数据源数组需要定义数组类型,否则报错
+            self.dataArray = Mapper<FeedKnowledageModel>().mapArray(JSONArray: response["feeds"] as! [[String : Any]])
+            self.tableView?.reloadData()
+        }, failture: { (error) in
+            print("error = \(error)")
+        })
+    }
+}
+
+extension FeedDecisionViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return (dataArray.count)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //        return (dataArray?.count)!
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let model: FeedKnowledageModel = self.dataArray[indexPath.section]
+        if (model.images?.count)! > 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FeedKnowledageMultiImageCell", for: indexPath) as! FeedKnowledageMultiImageCell
+            cell.configureCell(title: model.title!, source: model.source!, readCount: model.tail!, imageNameArr: model.images!)
+            cell.selectionStyle = .none
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FeedKnowledgeCell
+            cell.configureCell(title: model.title!, source: model.source!, readCount: model.tail!, imageNameArr: model.images!)
+            cell.selectionStyle = .none
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        let model: FeedKnowledageModel = self.dataArray[indexPath.section]
+        if (model.images?.count)! > 1 {
+            return 170
+        }
+        return 90
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        
+        return 15
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let model: FeedKnowledageModel = self.dataArray[indexPath.section]
+        let feedDetailVc = FeedDetailViewController()
+        feedDetailVc.url = model.link
+        self.navigationController?.pushViewController(feedDetailVc, animated: true)
+    }
 }

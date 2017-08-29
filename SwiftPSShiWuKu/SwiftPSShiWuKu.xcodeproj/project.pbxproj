@@ -64,6 +64,13 @@
 		F15D88BE1F5240AF00C4CB00 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */; };
 		F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */; };
 		F1BEAA101F54EEFB007DA0A3 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */; };
+		F1BEAA121F54F206007DA0A3 /* FeedHomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */; };
+		F1BEAA191F5504F6007DA0A3 /* FeedHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */; };
+		F1BEAA1A1F5504F6007DA0A3 /* FeedHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BEAA181F5504F6007DA0A3 /* FeedHomeCell.xib */; };
+		F1BEAA211F553188007DA0A3 /* CollectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA201F553188007DA0A3 /* CollectModel.swift */; };
+		F1BEAA231F55398A007DA0A3 /* FeedKnowledgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA221F55398A007DA0A3 /* FeedKnowledgeCell.swift */; };
+		F1BEAA251F553D1A007DA0A3 /* FeedKnowledageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA241F553D1A007DA0A3 /* FeedKnowledageModel.swift */; };
+		F1BEAA271F554BE8007DA0A3 /* FeedKnowledageMultiImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA261F554BE8007DA0A3 /* FeedKnowledageMultiImageCell.swift */; };
 		F1CA64371F53FDFF00B6582D /* FeedHomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64361F53FDFF00B6582D /* FeedHomeListViewController.swift */; };
 		F1CA64391F53FE2E00B6582D /* FeedKnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64381F53FE2E00B6582D /* FeedKnowledgeViewController.swift */; };
 		F1CA643B1F53FE4A00B6582D /* FeedDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA643A1F53FE4A00B6582D /* FeedDecisionViewController.swift */; };
@@ -182,6 +189,13 @@
 		F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
+		F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeListModel.swift; sourceTree = "<group>"; };
+		F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeCell.swift; sourceTree = "<group>"; };
+		F1BEAA181F5504F6007DA0A3 /* FeedHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedHomeCell.xib; sourceTree = "<group>"; };
+		F1BEAA201F553188007DA0A3 /* CollectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectModel.swift; sourceTree = "<group>"; };
+		F1BEAA221F55398A007DA0A3 /* FeedKnowledgeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedKnowledgeCell.swift; sourceTree = "<group>"; };
+		F1BEAA241F553D1A007DA0A3 /* FeedKnowledageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedKnowledageModel.swift; sourceTree = "<group>"; };
+		F1BEAA261F554BE8007DA0A3 /* FeedKnowledageMultiImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedKnowledageMultiImageCell.swift; sourceTree = "<group>"; };
 		F1CA64361F53FDFF00B6582D /* FeedHomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeListViewController.swift; sourceTree = "<group>"; };
 		F1CA64381F53FE2E00B6582D /* FeedKnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedKnowledgeViewController.swift; sourceTree = "<group>"; };
 		F1CA643A1F53FE4A00B6582D /* FeedDecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDecisionViewController.swift; sourceTree = "<group>"; };
@@ -617,6 +631,7 @@
 		F15CBE151F45471900BFEF23 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				F1BEAA1F1F553170007DA0A3 /* RealmModel */,
 				F15CBE161F45471900BFEF23 /* Controller */,
 				F15CBE171F45471900BFEF23 /* Model */,
 				F15CBE181F45471900BFEF23 /* View */,
@@ -641,6 +656,8 @@
 			isa = PBXGroup;
 			children = (
 				F1CA64421F54038500B6582D /* FeedEvaluateModel.swift */,
+				F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */,
+				F1BEAA241F553D1A007DA0A3 /* FeedKnowledageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -651,6 +668,10 @@
 				F1CA643E1F53FFA800B6582D /* FeedEvaluateCell.swift */,
 				F1CA643F1F53FFA800B6582D /* FeedEvaluateCell.xib */,
 				F1CA64461F540DFB00B6582D /* FeedDetailBottomView.swift */,
+				F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */,
+				F1BEAA181F5504F6007DA0A3 /* FeedHomeCell.xib */,
+				F1BEAA221F55398A007DA0A3 /* FeedKnowledgeCell.swift */,
+				F1BEAA261F554BE8007DA0A3 /* FeedKnowledageMultiImageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -833,6 +854,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F1BEAA1F1F553170007DA0A3 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1BEAA201F553188007DA0A3 /* CollectModel.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -952,6 +981,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BEAA1A1F5504F6007DA0A3 /* FeedHomeCell.xib in Resources */,
 				F15CBE511F45950C00BFEF23 /* MineHeaderView.xib in Resources */,
 				F15CBDC11F45458D00BFEF23 /* YMSharePlist.plist in Resources */,
 				F11355121F42E958003CBF4E /* LaunchScreen.storyboard in Resources */,
@@ -1140,6 +1170,7 @@
 				F1EF321A1F516287004EA52C /* GroupModel.swift in Sources */,
 				F15CBDBC1F45458D00BFEF23 /* Const.swift in Sources */,
 				F15CBDFD1F45458D00BFEF23 /* SpaceSizeTool.swift in Sources */,
+				F1BEAA271F554BE8007DA0A3 /* FeedKnowledageMultiImageCell.swift in Sources */,
 				F15CBDB11F45458D00BFEF23 /* String+Extension.swift in Sources */,
 				F1CA64401F53FFA800B6582D /* FeedEvaluateCell.swift in Sources */,
 				F1EF321C1F51641B004EA52C /* SubCategoriesModel.swift in Sources */,
@@ -1154,9 +1185,11 @@
 				F15CBE011F45458D00BFEF23 /* WMProgressView.m in Sources */,
 				F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */,
 				F15CBE361F45475700BFEF23 /* FeedViewController.swift in Sources */,
+				F1BEAA211F553188007DA0A3 /* CollectModel.swift in Sources */,
 				F15CBDFE1F45458D00BFEF23 /* WMFooldView.m in Sources */,
 				F15CBDB51F45458D00BFEF23 /* UIDevice+Extension.swift in Sources */,
 				F15CBE001F45458D00BFEF23 /* WMMenuView.m in Sources */,
+				F1BEAA251F553D1A007DA0A3 /* FeedKnowledageModel.swift in Sources */,
 				F1EF32141F514AAC004EA52C /* HomeSectionHeaderView.swift in Sources */,
 				F15CBE021F45458D00BFEF23 /* WMScrollView.m in Sources */,
 				F15CBDBA1F45458D00BFEF23 /* UIView+Extension.swift in Sources */,
@@ -1180,10 +1213,13 @@
 				F15CBDBB1F45458D00BFEF23 /* UIView+Frame.swift in Sources */,
 				F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */,
 				F15CBE531F459B7500BFEF23 /* HomeHeaderView.swift in Sources */,
+				F1BEAA191F5504F6007DA0A3 /* FeedHomeCell.swift in Sources */,
 				F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */,
+				F1BEAA231F55398A007DA0A3 /* FeedKnowledgeCell.swift in Sources */,
 				F1CA64371F53FDFF00B6582D /* FeedHomeListViewController.swift in Sources */,
 				F1BEAA101F54EEFB007DA0A3 /* HomeListViewController.swift in Sources */,
 				F15CBDAF1F45458D00BFEF23 /* Dictionary+Extension.swift in Sources */,
+				F1BEAA121F54F206007DA0A3 /* FeedHomeListModel.swift in Sources */,
 				F15CBE341F45474C00BFEF23 /* MineViewController.swift in Sources */,
 				F1CA643D1F53FE5900B6582D /* FeedEvaluateViewController.swift in Sources */,
 				F15CBDB01F45458D00BFEF23 /* NSDate+Extension.swift in Sources */,
