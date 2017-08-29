@@ -12,23 +12,23 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="SwiftPSShiWuKu" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="84" height="93"/>
+            <rect key="frame" x="0.0" y="0.0" width="84" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="84" height="93"/>
+                <rect key="frame" x="0.0" y="0.0" width="84" height="90"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5go-FJ-4Cn">
                         <rect key="frame" x="17" y="5" width="50" height="50"/>
-                        <color key="backgroundColor" red="1" green="0.38236766630000002" blue="0.34146211700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="Uo5-5L-htf"/>
                             <constraint firstAttribute="width" constant="50" id="iWd-iy-639"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="米饭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1f-Qt-Ki1">
-                        <rect key="frame" x="22" y="70" width="35" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="22" y="70" width="35" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -43,6 +43,10 @@
                 <constraint firstAttribute="trailing" secondItem="p1f-Qt-Ki1" secondAttribute="trailing" constant="27" id="qUE-I2-8fm"/>
             </constraints>
             <size key="customSize" width="84" height="93"/>
+            <connections>
+                <outlet property="imgView" destination="5go-FJ-4Cn" id="SXd-Zp-SbW"/>
+                <outlet property="titleLabel" destination="p1f-Qt-Ki1" id="icD-W8-3Ah"/>
+            </connections>
             <point key="canvasLocation" x="51" y="75.5"/>
         </collectionViewCell>
     </objects>

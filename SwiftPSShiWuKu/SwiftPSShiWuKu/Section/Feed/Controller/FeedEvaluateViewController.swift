@@ -28,7 +28,8 @@ class FeedEvaluateViewController: BaseViewController {
         self.view.addSubview(tableView!)
         tableView?.tableFooterView = UIView()
         tableView?.tableHeaderView = UIView()
-        tableView?.register( UINib(nibName: "FeedEvaluateCell", bundle: nil), forCellReuseIdentifier: "FeedEvaluateCell")
+//        tableView?.register( UINib(nibName: "FeedEvaluateCell", bundle: nil), forCellReuseIdentifier: "FeedEvaluateCell")
+        tableView?.register(FeedEvaluateCell.self, forCellReuseIdentifier: "cell")
     }
 }
 
@@ -66,7 +67,7 @@ extension FeedEvaluateViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedEvaluateCell", for: indexPath) as! FeedEvaluateCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FeedEvaluateCell
         let model: FeedEvaluateModel = self.dataArray[indexPath.section]
         cell.configureCell(imgName: model.background, topStr: model.source, titleStr: model.title, readCountStr: model.tail)
         cell.selectionStyle = .none

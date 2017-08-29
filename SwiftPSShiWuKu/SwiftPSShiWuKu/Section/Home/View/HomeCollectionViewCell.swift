@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    func configureCell(imgName: String, title: String) {
+        let url = URL(string: imgName)
+        imgView?.kf.setImage(with: ImageResource.init(downloadURL: url!))
+        titleLabel.text = title
+    }
 }

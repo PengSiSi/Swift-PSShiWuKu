@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,38 +23,38 @@
                         <color key="backgroundColor" red="0.91831282380000001" green="0.91831282380000001" blue="0.91831282380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/NICE健康/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVk-vJ-UUf">
-                        <rect key="frame" x="8" y="23" width="334" height="18"/>
+                        <rect key="frame" x="10" y="0.0" width="330" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="各类海鲜蛋白质排行榜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8E-aq-mbs">
-                        <rect key="frame" x="8" y="68" width="334" height="18"/>
+                        <rect key="frame" x="8" y="69" width="334" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000人阅读" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTM-m7-7fG">
-                        <rect key="frame" x="8" y="115.5" width="334" height="18"/>
+                        <rect key="frame" x="10" y="120.5" width="330" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="D8E-aq-mbs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6oY-Nz-E5S"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="nVk-vJ-UUf" secondAttribute="trailing" id="AaU-QI-bdn"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="DTM-m7-7fG" secondAttribute="trailing" id="Gnp-eT-om9"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="D8E-aq-mbs" secondAttribute="trailing" id="Hsz-pw-bSH"/>
+                    <constraint firstItem="DTM-m7-7fG" firstAttribute="leading" secondItem="Q2S-4z-l7G" secondAttribute="leading" id="1ai-ZG-qrj"/>
                     <constraint firstItem="Q2S-4z-l7G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="IjB-bI-Eu0"/>
-                    <constraint firstItem="D8E-aq-mbs" firstAttribute="top" secondItem="nVk-vJ-UUf" secondAttribute="bottom" constant="27" id="PD3-v8-Lr3"/>
+                    <constraint firstItem="DTM-m7-7fG" firstAttribute="trailing" secondItem="Q2S-4z-l7G" secondAttribute="trailing" id="OP3-Bj-BR4"/>
+                    <constraint firstItem="D8E-aq-mbs" firstAttribute="leading" secondItem="Q2S-4z-l7G" secondAttribute="leading" constant="-2" id="QBj-2d-lnX"/>
+                    <constraint firstItem="nVk-vJ-UUf" firstAttribute="top" secondItem="Q2S-4z-l7G" secondAttribute="top" id="aWY-fk-vy8"/>
+                    <constraint firstItem="D8E-aq-mbs" firstAttribute="top" secondItem="nVk-vJ-UUf" secondAttribute="top" constant="69" id="caY-BP-o0s"/>
                     <constraint firstAttribute="bottom" secondItem="Q2S-4z-l7G" secondAttribute="bottom" id="giJ-KA-OQG"/>
-                    <constraint firstItem="nVk-vJ-UUf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="kAC-Km-Ook"/>
-                    <constraint firstItem="nVk-vJ-UUf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lGE-uQ-b5H"/>
+                    <constraint firstItem="nVk-vJ-UUf" firstAttribute="leading" secondItem="Q2S-4z-l7G" secondAttribute="leading" id="jSY-b7-AbC"/>
                     <constraint firstItem="Q2S-4z-l7G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mJJ-yi-mUX"/>
                     <constraint firstAttribute="trailing" secondItem="Q2S-4z-l7G" secondAttribute="trailing" constant="10" id="mam-1p-9N7"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="DTM-m7-7fG" secondAttribute="bottom" constant="15" id="u5h-OH-vRR"/>
-                    <constraint firstItem="DTM-m7-7fG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zuH-el-jQX"/>
+                    <constraint firstItem="D8E-aq-mbs" firstAttribute="trailing" secondItem="Q2S-4z-l7G" secondAttribute="trailing" constant="2" id="oP2-jZ-Fpr"/>
+                    <constraint firstItem="nVk-vJ-UUf" firstAttribute="trailing" secondItem="Q2S-4z-l7G" secondAttribute="trailing" id="qQL-IV-uad"/>
+                    <constraint firstItem="DTM-m7-7fG" firstAttribute="bottom" secondItem="Q2S-4z-l7G" secondAttribute="bottom" constant="-18" id="w84-pF-NDe"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

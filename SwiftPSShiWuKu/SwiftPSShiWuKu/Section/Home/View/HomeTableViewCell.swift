@@ -8,13 +8,30 @@
 
 import UIKit
 
+protocol HomeTableViewCellDelegate: NSObjectProtocol {
+    func didClickCollectionViewCell(indexPath: IndexPath);
+}
+
 class HomeTableViewCell: UITableViewCell {
 
     var collectionView: UICollectionView?
+    weak var delegate: HomeTableViewCellDelegate?
+    
     var dataArray: [CategoryModel]? {
         didSet {
+            let rowCount = ((dataArray?.count)! / 3)
+            collectionView?.frame = CGRect(x: 0, y: 0, width: Int(k_ScreenWidth), height: rowCount * 90)
             collectionView?.reloadData()
         }
+    }
+    
+    // cell高度
+    func cellHeight() -> CGFloat {
+        
+        // 行数  1.2.3: 1  4.5.6: 2  7.8.9: 3
+        let rowCount = ((dataArray?.count)! / 3)
+        collectionView?.frame = CGRect(x: 0, y: 0, width: Int(k_ScreenWidth), height: rowCount * 90)
+        return CGFloat(rowCount * 90)
     }
     
     override func awakeFromNib() {
@@ -42,7 +59,7 @@ class HomeTableViewCell: UITableViewCell {
         collectionView?.delegate = self
         collectionView?.dataSource = self
         collectionView?.isScrollEnabled = false
-        collectionView?.backgroundColor = UIColor.green
+        collectionView?.backgroundColor = UIColor.white
         self.contentView.addSubview(collectionView!)
         collectionView?.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionViewCell")
     }
@@ -57,17 +74,20 @@ extension HomeTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-//        return (dataArray?.count)!
-        return 5
+        return (dataArray?.count)!
+//        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
+        let model = dataArray?[indexPath.row]
+        cell.configureCell(imgName: model!.image_url!, title: model!.name!)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        self.delegate? .didClickCollectionViewCell(indexPath: indexPath)
     }
 }

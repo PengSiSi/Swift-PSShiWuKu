@@ -18,8 +18,8 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isTranslucent = false
-        setupUI()
         loadHomeData()
+//        setupUI()
     }
     
     func setupUI() {
@@ -29,11 +29,9 @@ class HomeViewController: BaseViewController {
     
     func createHearerView() {
         headerView = HomeHeaderView(frame: CGRect(x: 0, y: 0, width: k_ScreenWidth, height: 200))
-//        self.view.bringSubview(toFront: headerView!)
         headerView?.block = {(text) -> () in
             print(text)
         }
-//        self.tableView.tableHeaderView = headerView
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,7 +48,7 @@ class HomeViewController: BaseViewController {
     
     func createTableView() {
     
-        tableView = UITableView(frame: self.view.bounds, style: .grouped)
+        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: k_ScreenWidth, height: k_ScreenHeight - 64), style: .grouped)
         tableView?.delegate = self
         tableView?.dataSource = self
         tableView.backgroundColor = GlobalColor()
@@ -71,7 +69,9 @@ extension HomeViewController {
             // json转model
             // 闭包里面需要self
             self.groupArr = Mapper<GroupModel>().mapArray(JSONArray: response["group"] as! [[String : Any]])
-            self.tableView.reloadData()
+            // 这里cell赋值cell会崩溃,数据源没有...这里先拿到值再设置tableView
+            self.setupUI()
+//            self.tableView.reloadData()
         }, failture: { (error) in
             print("error = \(error)")
         })
@@ -102,7 +102,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Homecell", for: indexPath) as! HomeTableViewCell
-//            cell.dataArray = groupArr?[indexPath.section].categories
+            cell.dataArray = groupArr?[indexPath.section].categories
+            cell.delegate = self
             return cell
         }
     }
@@ -126,18 +127,32 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         
-        return 0.001
+        return 20
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 44
         } else {
-            return 240
+            // 到这里开始是cell不存在,所以直接使用数据源判断一次
+            let array = groupArr?[indexPath.section].categories
+            let rowCount = ((array?.count)! / 3)
+            return CGFloat(rowCount * 90)
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+}
+
+extension HomeViewController: HomeTableViewCellDelegate {
+    
+    func didClickCollectionViewCell(indexPath: IndexPath) {
+        let homeListVc = HomeListViewController()
+        let array = groupArr?[indexPath.section].categories
+        let categoryModel = array?[indexPath.row]
+        homeListVc.title = categoryModel?.name
+        self.navigationController?.pushViewController(homeListVc, animated: true)
     }
 }

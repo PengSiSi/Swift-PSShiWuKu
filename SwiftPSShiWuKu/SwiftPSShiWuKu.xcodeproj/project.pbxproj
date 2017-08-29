@@ -63,6 +63,7 @@
 		F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */; };
 		F15D88BE1F5240AF00C4CB00 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */; };
 		F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */; };
+		F1BEAA101F54EEFB007DA0A3 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */; };
 		F1CA64371F53FDFF00B6582D /* FeedHomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64361F53FDFF00B6582D /* FeedHomeListViewController.swift */; };
 		F1CA64391F53FE2E00B6582D /* FeedKnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64381F53FE2E00B6582D /* FeedKnowledgeViewController.swift */; };
 		F1CA643B1F53FE4A00B6582D /* FeedDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA643A1F53FE4A00B6582D /* FeedDecisionViewController.swift */; };
@@ -180,6 +181,7 @@
 		F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		F1CA64361F53FDFF00B6582D /* FeedHomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeListViewController.swift; sourceTree = "<group>"; };
 		F1CA64381F53FE2E00B6582D /* FeedKnowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedKnowledgeViewController.swift; sourceTree = "<group>"; };
 		F1CA643A1F53FE4A00B6582D /* FeedDecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDecisionViewController.swift; sourceTree = "<group>"; };
@@ -667,6 +669,7 @@
 			isa = PBXGroup;
 			children = (
 				F15CBE311F45474100BFEF23 /* HomeViewController.swift */,
+				F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1179,6 +1182,7 @@
 				F15CBE531F459B7500BFEF23 /* HomeHeaderView.swift in Sources */,
 				F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */,
 				F1CA64371F53FDFF00B6582D /* FeedHomeListViewController.swift in Sources */,
+				F1BEAA101F54EEFB007DA0A3 /* HomeListViewController.swift in Sources */,
 				F15CBDAF1F45458D00BFEF23 /* Dictionary+Extension.swift in Sources */,
 				F15CBE341F45474C00BFEF23 /* MineViewController.swift in Sources */,
 				F1CA643D1F53FE5900B6582D /* FeedEvaluateViewController.swift in Sources */,

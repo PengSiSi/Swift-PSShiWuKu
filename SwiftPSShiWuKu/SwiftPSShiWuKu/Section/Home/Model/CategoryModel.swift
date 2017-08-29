@@ -12,7 +12,7 @@ import ObjectMapper
 class CategoryModel: Mappable {
 
     var id: Int = 0 //字符串写成可选的
-    var name: Int = 0  //基本数据类型要赋个初值
+    var name: String?  //基本数据类型要赋个初值
     var image_url: String?
     var sub_category_count: Int = 0
     var sub_categories: [SubCategoriesModel]?
