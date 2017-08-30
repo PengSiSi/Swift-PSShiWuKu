@@ -14,6 +14,7 @@ class FeedDetailBottomView: UIView {
     
     // 点击回调
     var block: DidClickClosure?
+    var collectButton: UIButton!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,9 +41,9 @@ class FeedDetailBottomView: UIView {
         containerView.addSubview(shareButton)
         
         // 收藏
-        let collectButton = UIButton(type: .custom)
+        collectButton = UIButton(type: .custom)
         collectButton.frame = CGRect(x: containerView.width / 2, y: 0, width: containerView.width / 2, height: 44)
-        collectButton.setImage(UIImage(named: "ic_news_collect"), for: .normal)
+        collectButton.setImage(UIImage(named: "ic_collect"), for: .normal)
         collectButton.setTitleColor(UIColor.darkGray, for: .normal)
         collectButton.setTitle("收藏", for: .normal)
         collectButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)

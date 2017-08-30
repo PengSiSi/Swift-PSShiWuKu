@@ -89,6 +89,7 @@ extension FeedEvaluateViewController: UITableViewDelegate, UITableViewDataSource
         let model: FeedEvaluateModel = self.dataArray[indexPath.section]
         let feedDetailVc = FeedDetailViewController()
         feedDetailVc.url = model.link
+        feedDetailVc.model = model
         self.navigationController?.pushViewController(feedDetailVc, animated: true)
     }
 }

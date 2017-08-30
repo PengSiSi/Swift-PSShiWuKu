@@ -17,6 +17,7 @@ pod 'Kingfisher'
 pod “SwiftyJSON”
 pod 'SnapKit'
 pod 'ObjectMapper'
+pod ‘RealmSwift’
 
 
 source 'https://github.com/CocoaPods/Specs.git'

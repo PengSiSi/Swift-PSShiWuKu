@@ -7,7 +7,17 @@
 //
 
 import UIKit
+import RealmSwift
 
-class CollectModel: NSObject {
+class CollectModel: Object {
+
+     dynamic var background = ""
+     dynamic var image_url = ""
+     dynamic var content_type = 0
+     dynamic var link = ""
+     dynamic var source = ""
+     dynamic var tail = ""
+     dynamic var title = ""
+     dynamic var type = ""
 
 }
