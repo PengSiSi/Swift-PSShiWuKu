@@ -9,6 +9,7 @@
 import UIKit
 
 typealias SearchBlock = (_ text: String) -> ()
+typealias BeginEditBlock = () -> ()
 
 class HomeHeaderView: UIView {
     
@@ -17,6 +18,7 @@ class HomeHeaderView: UIView {
     var tipLabel: UILabel?
     var searchBar: SearchBarView?
     var block: SearchBlock?
+    var beginEditBlock: BeginEditBlock?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -51,6 +53,11 @@ class HomeHeaderView: UIView {
         searchBar?.searchBlock = {(text) -> () in
             if weakSelf?.block != nil {
                 weakSelf?.block!(text)
+            }
+        }
+        searchBar?.beginEditBlock = {() -> () in
+            if weakSelf?.beginEditBlock != nil {
+                weakSelf?.beginEditBlock!()
             }
         }
         bgImgView?.isUserInteractionEnabled = true

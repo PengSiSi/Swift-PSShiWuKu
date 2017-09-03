@@ -11,6 +11,7 @@ import SnapKit
 
 // 搜索字符
 typealias TextFieldDidEndEditBlock = (_ searchText:String)->()
+typealias TextFieldDidBeginEditBlock = ()->()
 
 class SearchBarView: UIView {
     
@@ -19,6 +20,7 @@ class SearchBarView: UIView {
     var rightIconButton: UIButton?
     // 定义传值block
     var searchBlock: TextFieldDidEndEditBlock?
+    var beginEditBlock: TextFieldDidBeginEditBlock?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -86,5 +88,14 @@ extension SearchBarView: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
         print("开始编辑")
+        if beginEditBlock != nil {
+            beginEditBlock!()
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
     }
 }

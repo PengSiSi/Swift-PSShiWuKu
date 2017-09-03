@@ -32,6 +32,11 @@ class HomeViewController: BaseViewController {
         headerView?.block = {(text) -> () in
             print(text)
         }
+        headerView?.beginEditBlock = {() -> () in
+            print("开始编辑")
+            let searchVc = HomeSearchViewController()
+            self.navigationController?.pushViewController(searchVc, animated: true)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
