@@ -11,6 +11,11 @@
 		E65020B56C298ADE1A018ECF /* Pods_SwiftPSShiWuKuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4479A0283917AA6B375F2 /* Pods_SwiftPSShiWuKuTests.framework */; };
 		EB604D0E19F584689094C477 /* Pods_SwiftPSShiWuKuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175461AC5C69D5D35092C6B0 /* Pods_SwiftPSShiWuKuUITests.framework */; };
 		F10C84531F5BE2AA000DDB83 /* DropMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C84521F5BE2AA000DDB83 /* DropMenuView.swift */; };
+		F10C84551F5BEDF1000DDB83 /* HomeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C84541F5BEDF1000DDB83 /* HomeSearchViewController.swift */; };
+		F10C845E1F5BF695000DDB83 /* CommonSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C845C1F5BF695000DDB83 /* CommonSearchTableViewCell.swift */; };
+		F10C84621F5BF6B1000DDB83 /* HistorySearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C84601F5BF6B1000DDB83 /* HistorySearchTableViewCell.swift */; };
+		F10C84631F5BF6B1000DDB83 /* HistorySearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F10C84611F5BF6B1000DDB83 /* HistorySearchTableViewCell.xib */; };
+		F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C84641F5C045A000DDB83 /* QRCodeScanViewController.swift */; };
 		F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11355071F42E958003CBF4E /* AppDelegate.swift */; };
 		F113550D1F42E958003CBF4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F113550B1F42E958003CBF4E /* Main.storyboard */; };
 		F113550F1F42E958003CBF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F113550E1F42E958003CBF4E /* Assets.xcassets */; };
@@ -127,6 +132,11 @@
 		643D933DC54D150A8ADD83D9 /* Pods-SwiftPSShiWuKu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPSShiWuKu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPSShiWuKu/Pods-SwiftPSShiWuKu.release.xcconfig"; sourceTree = "<group>"; };
 		A09DD5FD81A64D2FD00B79FF /* Pods-SwiftPSShiWuKuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPSShiWuKuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPSShiWuKuUITests/Pods-SwiftPSShiWuKuUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F10C84521F5BE2AA000DDB83 /* DropMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropMenuView.swift; sourceTree = "<group>"; };
+		F10C84541F5BEDF1000DDB83 /* HomeSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSearchViewController.swift; sourceTree = "<group>"; };
+		F10C845C1F5BF695000DDB83 /* CommonSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonSearchTableViewCell.swift; sourceTree = "<group>"; };
+		F10C84601F5BF6B1000DDB83 /* HistorySearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySearchTableViewCell.swift; sourceTree = "<group>"; };
+		F10C84611F5BF6B1000DDB83 /* HistorySearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistorySearchTableViewCell.xib; sourceTree = "<group>"; };
+		F10C84641F5C045A000DDB83 /* QRCodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanViewController.swift; sourceTree = "<group>"; };
 		F11355041F42E958003CBF4E /* SwiftPSShiWuKu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPSShiWuKu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11355071F42E958003CBF4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F113550C1F42E958003CBF4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -701,6 +711,8 @@
 			children = (
 				F15CBE311F45474100BFEF23 /* HomeViewController.swift */,
 				F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */,
+				F10C84541F5BEDF1000DDB83 /* HomeSearchViewController.swift */,
+				F10C84641F5C045A000DDB83 /* QRCodeScanViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -728,6 +740,9 @@
 				F1E4B9321F56443000ED9C0A /* HomeListTableViewCell.swift */,
 				F1E4B9331F56443000ED9C0A /* HomeListTableViewCell.xib */,
 				F10C84521F5BE2AA000DDB83 /* DropMenuView.swift */,
+				F10C845C1F5BF695000DDB83 /* CommonSearchTableViewCell.swift */,
+				F10C84601F5BF6B1000DDB83 /* HistorySearchTableViewCell.swift */,
+				F10C84611F5BF6B1000DDB83 /* HistorySearchTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1008,6 +1023,7 @@
 				F15CBDC01F45458D00BFEF23 /* YMSettingPlist.plist in Resources */,
 				F1E4B9351F56443000ED9C0A /* HomeListTableViewCell.xib in Resources */,
 				F15CBDBE1F45458D00BFEF23 /* videoData.json in Resources */,
+				F10C84631F5BF6B1000DDB83 /* HistorySearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1191,6 +1207,7 @@
 				F10C84531F5BE2AA000DDB83 /* DropMenuView.swift in Sources */,
 				F15CBDB11F45458D00BFEF23 /* String+Extension.swift in Sources */,
 				F1CA64401F53FFA800B6582D /* FeedEvaluateCell.swift in Sources */,
+				F10C84551F5BEDF1000DDB83 /* HomeSearchViewController.swift in Sources */,
 				F1EF321C1F51641B004EA52C /* SubCategoriesModel.swift in Sources */,
 				F15CBE321F45474100BFEF23 /* HomeViewController.swift in Sources */,
 				F1DD813B1F5AA5190055C8ED /* PersonInfoTableViewCell.swift in Sources */,
@@ -1228,6 +1245,7 @@
 				F15CBDF81F45458D00BFEF23 /* CommonTool.swift in Sources */,
 				F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */,
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
+				F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */,
 				F15CBE031F45458D00BFEF23 /* WMPageController.m in Sources */,
 				F15CBDFC1F45458D00BFEF23 /* RequestFailedView.swift in Sources */,
 				F15CBDBB1F45458D00BFEF23 /* UIView+Frame.swift in Sources */,
@@ -1240,6 +1258,8 @@
 				F1BEAA101F54EEFB007DA0A3 /* HomeListViewController.swift in Sources */,
 				F15CBDAF1F45458D00BFEF23 /* Dictionary+Extension.swift in Sources */,
 				F1BEAA121F54F206007DA0A3 /* FeedHomeListModel.swift in Sources */,
+				F10C845E1F5BF695000DDB83 /* CommonSearchTableViewCell.swift in Sources */,
+				F10C84621F5BF6B1000DDB83 /* HistorySearchTableViewCell.swift in Sources */,
 				F15CBE341F45474C00BFEF23 /* MineViewController.swift in Sources */,
 				F1CA643D1F53FE5900B6582D /* FeedEvaluateViewController.swift in Sources */,
 				F15CBDB01F45458D00BFEF23 /* NSDate+Extension.swift in Sources */,

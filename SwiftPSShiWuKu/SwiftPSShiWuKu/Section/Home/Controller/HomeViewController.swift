@@ -112,6 +112,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         if section == 0 {
             let sectionHeaderView = HomeSectionHeaderView(frame: CGRect(x: 20, y: 0, width: k_ScreenWidth - 40, height: 80))
+            sectionHeaderView.closure = { (title) in
+                print(title)
+                let str = NSString(string: title)
+                if str.isEqual(to: "扫码对比") {
+                    let qrCodeScanVc = QRCodeScanViewController()
+                    let qrCodeNav = BaseNavigationController(rootViewController: qrCodeScanVc)
+                    self.present(qrCodeNav, animated: false, completion: nil)
+                }
+            }
             return sectionHeaderView
         }
         return UIView()
@@ -149,10 +158,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 extension HomeViewController: HomeTableViewCellDelegate {
     
     func didClickCollectionViewCell(indexPath: IndexPath) {
-        let homeListVc = HomeListViewController()
-        let array = groupArr?[indexPath.section].categories
-        let categoryModel = array?[indexPath.row]
-        homeListVc.title = categoryModel?.name
-        self.navigationController?.pushViewController(homeListVc, animated: true)
+        if indexPath.row == 0 {
+            
+            let homeListVc = HomeListViewController()
+            let array = groupArr?[indexPath.section].categories
+            let categoryModel = array?[indexPath.row]
+            homeListVc.title = categoryModel?.name
+            self.navigationController?.pushViewController(homeListVc, animated: true)
+        } else {
+            let searchVc = HomeSearchViewController()
+            self.navigationController?.pushViewController(searchVc, animated: true)
+        }
     }
 }

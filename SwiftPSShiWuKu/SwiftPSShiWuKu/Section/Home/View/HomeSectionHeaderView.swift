@@ -8,7 +8,11 @@
 
 import UIKit
 
+typealias CustomButtonClosure = (_ title: String) -> Void
+
 class HomeSectionHeaderView: UIView {
+    
+    var closure: CustomButtonClosure?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +35,7 @@ class HomeSectionHeaderView: UIView {
             let customButton = CustomButton(frame: CGRect(x: (CGFloat(CGFloat(index) * width) + 30), y: 0, width: width - 40, height: 50))
             customButton.setTitle(titleArray[index], for: .normal)
             customButton.setImage(UIImage(named: imageNameArray[index]), for: .normal)
+            customButton.addTarget(self, action: #selector(customButtonAction(button:)), for: .touchUpInside)
             containerView.addSubview(customButton)
         }
 
@@ -38,5 +43,12 @@ class HomeSectionHeaderView: UIView {
     
     func layOut() {
         
+    }
+    
+    func customButtonAction(button: UIButton) {
+        
+        if self.closure != nil {
+            self.closure!(button.currentTitle!)
+        }
     }
 }
