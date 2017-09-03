@@ -6,6 +6,7 @@
 //  Created by 思 彭 on 2017/8/28.
 //  Copyright © 2017年 思 彭. All rights reserved.
 // Feed模块详情页
+// 博客参考： http://www.hangge.com/blog/cache/detail_891.html
 
 import UIKit
 import RealmSwift
@@ -41,19 +42,25 @@ class FeedDetailViewController: BaseViewController, UIWebViewDelegate {
         bottomView = FeedDetailBottomView(frame: CGRect(x: 0, y: k_ScreenHeight - 44, width: k_ScreenWidth, height: 44))
         if isCollectFlag {
             bottomView.collectButton.setImage(UIImage(named: "ic_collect_select"), for: .normal)
+        } else {
+            bottomView.collectButton.setImage(UIImage(named: "ic_collect"), for: .normal)
         }
         // action
         bottomView.block = { (titleStr) -> () in
             let str = NSString(string: titleStr)
-            if str.isEqual(to: "收藏"){
+            if str.isEqual(to: "已收藏"){
                 print(str)
                 // 收藏到realm数据库
                 self.saveToRealmDB()
+            } else {
+                // 取消收藏
+//                self.deleteReamlItem()
             }
         }
         self.view.addSubview(bottomView)
     }
     
+    // 增加
     func saveToRealmDB() {
         
         bottomView.collectButton.setImage(UIImage(named: "ic_collect_select"), for: .normal)
@@ -63,14 +70,48 @@ class FeedDetailViewController: BaseViewController, UIWebViewDelegate {
         collectModel.title = title!
         collectModel.link = link!
         
+        let isExistFlag = self.isExistModel(currentModel: collectModel)
+        if !isExistFlag {
+            //使用默认的数据库
+            let realm = try! Realm()
+            // 数据持久化操作（类型记录也会自动添加的）
+            try! realm.write {
+                realm.add(collectModel)
+            }
+            //打印出数据库地址
+            print(realm.configuration.fileURL ?? "没有fileURL")
+        }
+    }
+    
+    // 删除
+    func deleteReamlItem() {
+        
+        let deleteModel = CollectModel()
+        let title = model?.title
+        let link = model?.link
+        deleteModel.title = title!
+        deleteModel.link = link!
+        // 在事务中删除一个对象
         //使用默认的数据库
         let realm = try! Realm()
-        // 数据持久化操作（类型记录也会自动添加的）
         try! realm.write {
-            realm.add(collectModel)
+            realm.delete(deleteModel)
+            bottomView.collectButton.setImage(UIImage(named: "ic_collect"), for: .normal)
         }
-        //打印出数据库地址
-        print(realm.configuration.fileURL ?? "没有fileURL")
+    }
+    
+    // 判断是否重复性
+    func isExistModel(currentModel: CollectModel) -> Bool {
+        let collectModels = try! Realm().objects(CollectModel.self)
+        print(collectModels.count)
+        for i in 0..<collectModels.count {
+            let modelItem: CollectModel = collectModels[i]
+            let titleStr = NSString(string: modelItem.title)
+            if titleStr.isEqual(to: (currentModel.title)) {
+                return true
+            }
+        }
+        return false
     }
     
     func findAllData() {

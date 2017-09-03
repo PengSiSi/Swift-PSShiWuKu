@@ -32,11 +32,13 @@ class SearchBarView: UIView {
     }
     
     func createSubViews() {
+        self.isUserInteractionEnabled = true
         iconImgView = UIImageView(image: UIImage(named: "ic_home_search"))
         iconImgView?.contentMode = .scaleAspectFit
         self.addSubview(iconImgView!)
         
         searchTextField = UITextField()
+        searchTextField?.isEnabled = true
         searchTextField?.font = UIFont.systemFont(ofSize: 15)
 //        searchTextField?.placeholder = "请输入食品名称"
         searchTextField?.attributedPlaceholder = NSAttributedString(string:"请输入食品名称",attributes:[NSForegroundColorAttributeName: MainColor()])
@@ -57,7 +59,7 @@ class SearchBarView: UIView {
         })
         searchTextField?.snp.makeConstraints({ (make) in
             make.left.equalTo((iconImgView?.snp.right)!).offset(10)
-            make.centerY.equalTo(self)
+            make.top.bottom.equalTo(self)
             make.right.equalTo((rightIconButton?.snp.left)!)
         })
         rightIconButton?.snp.makeConstraints({ (make) in
@@ -74,5 +76,15 @@ extension SearchBarView: UITextFieldDelegate {
         if searchBlock != nil {
             searchBlock!(textField.text!)
         }
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        print("开始编辑")
     }
 }

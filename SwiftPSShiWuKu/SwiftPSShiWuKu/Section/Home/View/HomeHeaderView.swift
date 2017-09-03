@@ -29,6 +29,7 @@ class HomeHeaderView: UIView {
     }
     
     func createSubViews() {
+        self.isUserInteractionEnabled = true
         bgImgView = UIImageView(image: UIImage(named: "img_home_bg"))
         bgImgView?.contentMode = .scaleAspectFill
         self.addSubview(bgImgView!)
@@ -52,6 +53,7 @@ class HomeHeaderView: UIView {
                 weakSelf?.block!(text)
             }
         }
+        bgImgView?.isUserInteractionEnabled = true
         bgImgView?.addSubview(searchBar!)
     }
     

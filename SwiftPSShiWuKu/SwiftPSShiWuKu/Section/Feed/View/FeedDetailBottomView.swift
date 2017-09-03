@@ -44,14 +44,17 @@ class FeedDetailBottomView: UIView {
         collectButton = UIButton(type: .custom)
         collectButton.frame = CGRect(x: containerView.width / 2, y: 0, width: containerView.width / 2, height: 44)
         collectButton.setImage(UIImage(named: "ic_collect"), for: .normal)
+        collectButton.setImage(UIImage(named: "ic_collect_select"), for: .selected)
         collectButton.setTitleColor(UIColor.darkGray, for: .normal)
-        collectButton.setTitle("收藏", for: .normal)
+        collectButton.setTitle("未收藏", for: .normal)
+        collectButton.setTitle("已收藏", for: .selected)
         collectButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         collectButton.addTarget(self, action: #selector(clickAction(button:)), for: .touchUpInside)
         containerView.addSubview(collectButton)
     }
     
     func clickAction(button: UIButton) {
+        button.isSelected = !button.isSelected
         let titleStr = button.currentTitle
         if block != nil {
             block!(titleStr!)

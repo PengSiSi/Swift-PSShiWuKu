@@ -10,6 +10,7 @@
 		870ECACFEE559EB1B009C750 /* Pods_SwiftPSShiWuKu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DAB933558EAE0C8428DE40 /* Pods_SwiftPSShiWuKu.framework */; };
 		E65020B56C298ADE1A018ECF /* Pods_SwiftPSShiWuKuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4479A0283917AA6B375F2 /* Pods_SwiftPSShiWuKuTests.framework */; };
 		EB604D0E19F584689094C477 /* Pods_SwiftPSShiWuKuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175461AC5C69D5D35092C6B0 /* Pods_SwiftPSShiWuKuUITests.framework */; };
+		F10C84531F5BE2AA000DDB83 /* DropMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C84521F5BE2AA000DDB83 /* DropMenuView.swift */; };
 		F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11355071F42E958003CBF4E /* AppDelegate.swift */; };
 		F113550D1F42E958003CBF4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F113550B1F42E958003CBF4E /* Main.storyboard */; };
 		F113550F1F42E958003CBF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F113550E1F42E958003CBF4E /* Assets.xcassets */; };
@@ -80,6 +81,10 @@
 		F1CA64431F54038500B6582D /* FeedEvaluateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64421F54038500B6582D /* FeedEvaluateModel.swift */; };
 		F1CA64451F540D0600B6582D /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64441F540D0600B6582D /* FeedDetailViewController.swift */; };
 		F1CA64471F540DFB00B6582D /* FeedDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA64461F540DFB00B6582D /* FeedDetailBottomView.swift */; };
+		F1DD81391F5A9C470055C8ED /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD81381F5A9C470055C8ED /* HomeModel.swift */; };
+		F1DD813B1F5AA5190055C8ED /* PersonInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD813A1F5AA5190055C8ED /* PersonInfoTableViewCell.swift */; };
+		F1E4B9341F56443000ED9C0A /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4B9321F56443000ED9C0A /* HomeListTableViewCell.swift */; };
+		F1E4B9351F56443000ED9C0A /* HomeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E4B9331F56443000ED9C0A /* HomeListTableViewCell.xib */; };
 		F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */; };
 		F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */; };
 		F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32111F5112DC004EA52C /* SearchBarView.swift */; };
@@ -121,6 +126,7 @@
 		61533DF1B65FFCC7F46102FE /* Pods-SwiftPSShiWuKuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPSShiWuKuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPSShiWuKuTests/Pods-SwiftPSShiWuKuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		643D933DC54D150A8ADD83D9 /* Pods-SwiftPSShiWuKu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPSShiWuKu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPSShiWuKu/Pods-SwiftPSShiWuKu.release.xcconfig"; sourceTree = "<group>"; };
 		A09DD5FD81A64D2FD00B79FF /* Pods-SwiftPSShiWuKuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPSShiWuKuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPSShiWuKuUITests/Pods-SwiftPSShiWuKuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F10C84521F5BE2AA000DDB83 /* DropMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropMenuView.swift; sourceTree = "<group>"; };
 		F11355041F42E958003CBF4E /* SwiftPSShiWuKu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPSShiWuKu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11355071F42E958003CBF4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F113550C1F42E958003CBF4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -205,6 +211,10 @@
 		F1CA64421F54038500B6582D /* FeedEvaluateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedEvaluateModel.swift; sourceTree = "<group>"; };
 		F1CA64441F540D0600B6582D /* FeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
 		F1CA64461F540DFB00B6582D /* FeedDetailBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailBottomView.swift; sourceTree = "<group>"; };
+		F1DD81381F5A9C470055C8ED /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		F1DD813A1F5AA5190055C8ED /* PersonInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoTableViewCell.swift; sourceTree = "<group>"; };
+		F1E4B9321F56443000ED9C0A /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
+		F1E4B9331F56443000ED9C0A /* HomeListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeListTableViewCell.xib; sourceTree = "<group>"; };
 		F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		F1EF32111F5112DC004EA52C /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
@@ -701,6 +711,7 @@
 				F1EF32171F51627D004EA52C /* CategoryModel.swift */,
 				F1EF321B1F51641B004EA52C /* SubCategoriesModel.swift */,
 				F1EF32191F516287004EA52C /* GroupModel.swift */,
+				F1DD81381F5A9C470055C8ED /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -714,6 +725,9 @@
 				F1EF32151F514F0C004EA52C /* HomeTableViewCell.swift */,
 				F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */,
 				F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */,
+				F1E4B9321F56443000ED9C0A /* HomeListTableViewCell.swift */,
+				F1E4B9331F56443000ED9C0A /* HomeListTableViewCell.xib */,
+				F10C84521F5BE2AA000DDB83 /* DropMenuView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -819,6 +833,7 @@
 				F15CBE4E1F45931D00BFEF23 /* MineHeaderView.swift */,
 				F15CBE501F45950C00BFEF23 /* MineHeaderView.xib */,
 				F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */,
+				F1DD813A1F5AA5190055C8ED /* PersonInfoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -991,6 +1006,7 @@
 				F15CBDBF1F45458D00BFEF23 /* YMMineCellPlist.plist in Resources */,
 				F113550D1F42E958003CBF4E /* Main.storyboard in Resources */,
 				F15CBDC01F45458D00BFEF23 /* YMSettingPlist.plist in Resources */,
+				F1E4B9351F56443000ED9C0A /* HomeListTableViewCell.xib in Resources */,
 				F15CBDBE1F45458D00BFEF23 /* videoData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1170,11 +1186,14 @@
 				F1EF321A1F516287004EA52C /* GroupModel.swift in Sources */,
 				F15CBDBC1F45458D00BFEF23 /* Const.swift in Sources */,
 				F15CBDFD1F45458D00BFEF23 /* SpaceSizeTool.swift in Sources */,
+				F1DD81391F5A9C470055C8ED /* HomeModel.swift in Sources */,
 				F1BEAA271F554BE8007DA0A3 /* FeedKnowledageMultiImageCell.swift in Sources */,
+				F10C84531F5BE2AA000DDB83 /* DropMenuView.swift in Sources */,
 				F15CBDB11F45458D00BFEF23 /* String+Extension.swift in Sources */,
 				F1CA64401F53FFA800B6582D /* FeedEvaluateCell.swift in Sources */,
 				F1EF321C1F51641B004EA52C /* SubCategoriesModel.swift in Sources */,
 				F15CBE321F45474100BFEF23 /* HomeViewController.swift in Sources */,
+				F1DD813B1F5AA5190055C8ED /* PersonInfoTableViewCell.swift in Sources */,
 				F15CBDFF1F45458D00BFEF23 /* WMMenuItem.m in Sources */,
 				F15CBDB81F45458D00BFEF23 /* UITableView+Extension.swift in Sources */,
 				F15CBDB91F45458D00BFEF23 /* UITableViewCell+Extension.swift in Sources */,
@@ -1182,6 +1201,7 @@
 				F15CBDFB1F45458D00BFEF23 /* PageTitleView.swift in Sources */,
 				F1CA643B1F53FE4A00B6582D /* FeedDecisionViewController.swift in Sources */,
 				F15CBDB71F45458D00BFEF23 /* UIImageView+Extension.swift in Sources */,
+				F1E4B9341F56443000ED9C0A /* HomeListTableViewCell.swift in Sources */,
 				F15CBE011F45458D00BFEF23 /* WMProgressView.m in Sources */,
 				F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */,
 				F15CBE361F45475700BFEF23 /* FeedViewController.swift in Sources */,
