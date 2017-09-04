@@ -146,7 +146,7 @@ class QRCodeScanViewController: BaseViewController, AVCaptureMetadataOutputObjec
     
     private lazy var kuangView: UIImageView = {
         let mView = UIImageView()
-        mView.image = UIImage(named: "scan_rect_316x196")
+        mView.image = UIImage(named: "img_scan_area")
         return mView
     }()
     

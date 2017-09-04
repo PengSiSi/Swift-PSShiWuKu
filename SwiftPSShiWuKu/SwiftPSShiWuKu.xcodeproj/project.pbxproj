@@ -69,6 +69,7 @@
 		F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */; };
 		F15D88BE1F5240AF00C4CB00 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */; };
 		F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */; };
+		F1A311401F5D350A001DBE52 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */; };
 		F1BEAA101F54EEFB007DA0A3 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */; };
 		F1BEAA121F54F206007DA0A3 /* FeedHomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */; };
 		F1BEAA191F5504F6007DA0A3 /* FeedHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */; };
@@ -204,6 +205,7 @@
 		F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeListModel.swift; sourceTree = "<group>"; };
 		F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeCell.swift; sourceTree = "<group>"; };
@@ -638,6 +640,7 @@
 		F15CBE141F45471900BFEF23 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				F1A3113E1F5D34F9001DBE52 /* Guide */,
 				F15CBE151F45471900BFEF23 /* Feed */,
 				F15CBE191F45471900BFEF23 /* Home */,
 				F15CBE1D1F45471900BFEF23 /* Login */,
@@ -882,6 +885,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F1A3113E1F5D34F9001DBE52 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */,
+			);
+			path = Guide;
 			sourceTree = "<group>";
 		};
 		F1BEAA1F1F553170007DA0A3 /* RealmModel */ = {
@@ -1197,6 +1208,7 @@
 				F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */,
 				F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */,
 				F15CBDF71F45458D00BFEF23 /* AppInfoTool.swift in Sources */,
+				F1A311401F5D350A001DBE52 /* GuideViewController.swift in Sources */,
 				F1FF1CFF1F501AA500BBD605 /* CountDownButton.swift in Sources */,
 				F15CBDFA1F45458D00BFEF23 /* PageContentView.swift in Sources */,
 				F1EF321A1F516287004EA52C /* GroupModel.swift in Sources */,

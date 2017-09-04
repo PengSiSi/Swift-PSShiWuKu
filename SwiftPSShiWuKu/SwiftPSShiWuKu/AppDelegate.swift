@@ -17,11 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
+        print(UserDefaults.standard.bool(forKey: kFirstLaunch))
         // 检测第一次启动
         if !UserDefaults.standard.bool(forKey: kFirstLaunch) {
             // 不是第一次启动
             UserDefaults.standard.set(true, forKey: kFirstLaunch)
-            window?.rootViewController = IntroduceViewController()
+            let guideVc = GuideViewController()
+            guideVc.tapBlock = {
+                print("进入主页")
+                let mainTabBarVc = MainTabBarController()
+                mainTabBarVc.delegate = self
+                self.window?.rootViewController = mainTabBarVc
+            }
+            window?.rootViewController = guideVc
         } else {
             let mainTabBarVc = MainTabBarController()
             mainTabBarVc.delegate = self
