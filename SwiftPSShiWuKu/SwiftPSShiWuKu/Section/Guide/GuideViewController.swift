@@ -4,7 +4,8 @@
 //
 //  Created by 思 彭 on 2017/9/4.
 //  Copyright © 2017年 思 彭. All rights reserved.
-//
+// 第一次进入欢迎页
+// 参考博客: http://www.cnblogs.com/mantgh/p/4604129.html
 
 import UIKit
 

@@ -90,6 +90,12 @@ extension MineViewController {
             switch indexPath.row {
             case 0:
                 break;
+            case 1:
+                break;
+            case 2:
+                let uploadFoodDataVc = UploadFoodDataViewController()
+                self.navigationController?.pushViewController(uploadFoodDataVc, animated: true)
+                break;
             default:
                 break
         }

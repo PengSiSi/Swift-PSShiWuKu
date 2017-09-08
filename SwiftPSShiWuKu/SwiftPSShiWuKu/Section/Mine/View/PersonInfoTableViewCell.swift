@@ -45,11 +45,13 @@ class PersonInfoTableViewCell: UITableViewCell {
         titleLabel = UILabel()
         titleLabel?.font = UIFont.systemFont(ofSize: 15)
         titleLabel?.textColor = UIColor.black
+//        titleLabel?.isHidden = true
         contentView.addSubview(titleLabel!)
         
         subTitleLabel = UILabel()
         subTitleLabel?.font = UIFont.systemFont(ofSize: 15)
         subTitleLabel?.textColor = UIColor.gray
+        subTitleLabel?.isHidden = true
         contentView.addSubview(subTitleLabel!)
         
         textField = UITextField()

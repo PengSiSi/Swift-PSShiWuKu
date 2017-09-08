@@ -22,6 +22,9 @@
 		F11355121F42E958003CBF4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11355101F42E958003CBF4E /* LaunchScreen.storyboard */; };
 		F113551D1F42E958003CBF4E /* SwiftPSShiWuKuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113551C1F42E958003CBF4E /* SwiftPSShiWuKuTests.swift */; };
 		F11355281F42E958003CBF4E /* SwiftPSShiWuKuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11355271F42E958003CBF4E /* SwiftPSShiWuKuUITests.swift */; };
+		F13FCDFD1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FCDFC1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift */; };
+		F13FCDFF1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FCDFE1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift */; };
+		F13FCE011F5FF3CF004D6E20 /* DraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FCE001F5FF3CF004D6E20 /* DraftViewController.swift */; };
 		F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF41F45458D00BFEF23 /* BaseNavigationController.swift */; };
 		F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF51F45458D00BFEF23 /* BaseViewController.swift */; };
 		F15CBDAE1F45458D00BFEF23 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF91F45458D00BFEF23 /* Array+Extension.swift */; };
@@ -70,6 +73,11 @@
 		F15D88BE1F5240AF00C4CB00 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */; };
 		F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */; };
 		F1A311401F5D350A001DBE52 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */; };
+		F1A311421F5D4329001DBE52 /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A311411F5D4329001DBE52 /* NewFeatureViewController.swift */; };
+		F1B16A381F63606B00A72F83 /* DateLmyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */; };
+		F1B16A391F63606B00A72F83 /* UIColorLmyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A361F63606B00A72F83 /* UIColorLmyExtension.swift */; };
+		F1B16A3C1F63619700A72F83 /* LmyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A3B1F63619700A72F83 /* LmyPicker.swift */; };
+		F1B16A3E1F6364FC00A72F83 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1B16A3D1F6364FC00A72F83 /* area.plist */; };
 		F1BEAA101F54EEFB007DA0A3 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */; };
 		F1BEAA121F54F206007DA0A3 /* FeedHomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */; };
 		F1BEAA191F5504F6007DA0A3 /* FeedHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */; };
@@ -150,6 +158,9 @@
 		F11355231F42E958003CBF4E /* SwiftPSShiWuKuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPSShiWuKuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11355271F42E958003CBF4E /* SwiftPSShiWuKuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPSShiWuKuUITests.swift; sourceTree = "<group>"; };
 		F11355291F42E958003CBF4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F13FCDFC1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFoodDataViewController.swift; sourceTree = "<group>"; };
+		F13FCDFE1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUploadFoodViewController.swift; sourceTree = "<group>"; };
+		F13FCE001F5FF3CF004D6E20 /* DraftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftViewController.swift; sourceTree = "<group>"; };
 		F15CBCF41F45458D00BFEF23 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F15CBCF51F45458D00BFEF23 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F15CBCF91F45458D00BFEF23 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
@@ -206,6 +217,11 @@
 		F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		F1A311411F5D4329001DBE52 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
+		F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateLmyExtension.swift; sourceTree = "<group>"; };
+		F1B16A361F63606B00A72F83 /* UIColorLmyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorLmyExtension.swift; sourceTree = "<group>"; };
+		F1B16A3B1F63619700A72F83 /* LmyPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LmyPicker.swift; sourceTree = "<group>"; };
+		F1B16A3D1F6364FC00A72F83 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = area.plist; path = Resource/Plist/area.plist; sourceTree = "<group>"; };
 		F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeListModel.swift; sourceTree = "<group>"; };
 		F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeCell.swift; sourceTree = "<group>"; };
@@ -292,6 +308,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F10CD3AF1F6287A7000F352D /* CustomPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F1B16A3B1F63619700A72F83 /* LmyPicker.swift */,
+			);
+			path = CustomPickerView;
+			sourceTree = "<group>";
+		};
 		F11354FB1F42E958003CBF4E = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +346,7 @@
 				F15CBCF61F45458D00BFEF23 /* Categorys */,
 				F15CBD111F45458D00BFEF23 /* Macro */,
 				F15CBD141F45458D00BFEF23 /* Resource */,
+				F1B16A3D1F6364FC00A72F83 /* area.plist */,
 				F15CBD6F1F45458D00BFEF23 /* Util */,
 				F15CBD7F1F45458D00BFEF23 /* Vendors */,
 				F11355071F42E958003CBF4E /* AppDelegate.swift */,
@@ -364,6 +389,7 @@
 		F15CBCF61F45458D00BFEF23 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				F1B16A341F63606B00A72F83 /* Custom */,
 				F15CBCF71F45458D00BFEF23 /* AVFoundation */,
 				F15CBCF81F45458D00BFEF23 /* Foundation */,
 				F15CBCFD1F45458D00BFEF23 /* UIKit */,
@@ -533,6 +559,7 @@
 		F15CBD6F1F45458D00BFEF23 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				F10CD3AF1F6287A7000F352D /* CustomPickerView */,
 				F15CBD701F45458D00BFEF23 /* AlertView */,
 				F15CBD721F45458D00BFEF23 /* AppInfoTool */,
 				F15CBD741F45458D00BFEF23 /* CommonTool */,
@@ -834,6 +861,9 @@
 				F15CBE331F45474C00BFEF23 /* MineViewController.swift */,
 				F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */,
 				F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */,
+				F13FCDFC1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift */,
+				F13FCDFE1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift */,
+				F13FCE001F5FF3CF004D6E20 /* DraftViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -891,8 +921,18 @@
 			isa = PBXGroup;
 			children = (
 				F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */,
+				F1A311411F5D4329001DBE52 /* NewFeatureViewController.swift */,
 			);
 			path = Guide;
+			sourceTree = "<group>";
+		};
+		F1B16A341F63606B00A72F83 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */,
+				F1B16A361F63606B00A72F83 /* UIColorLmyExtension.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		F1BEAA1F1F553170007DA0A3 /* RealmModel */ = {
@@ -1033,6 +1073,7 @@
 				F113550D1F42E958003CBF4E /* Main.storyboard in Resources */,
 				F15CBDC01F45458D00BFEF23 /* YMSettingPlist.plist in Resources */,
 				F1E4B9351F56443000ED9C0A /* HomeListTableViewCell.xib in Resources */,
+				F1B16A3E1F6364FC00A72F83 /* area.plist in Resources */,
 				F15CBDBE1F45458D00BFEF23 /* videoData.json in Resources */,
 				F10C84631F5BF6B1000DDB83 /* HistorySearchTableViewCell.xib in Resources */,
 			);
@@ -1197,6 +1238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13FCE011F5FF3CF004D6E20 /* DraftViewController.swift in Sources */,
 				F15CBDB61F45458D00BFEF23 /* UIImage+Extension.swift in Sources */,
 				F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */,
 				F15CBDF91F45458D00BFEF23 /* HTTPTool.swift in Sources */,
@@ -1207,6 +1249,7 @@
 				F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */,
 				F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */,
 				F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */,
+				F1A311421F5D4329001DBE52 /* NewFeatureViewController.swift in Sources */,
 				F15CBDF71F45458D00BFEF23 /* AppInfoTool.swift in Sources */,
 				F1A311401F5D350A001DBE52 /* GuideViewController.swift in Sources */,
 				F1FF1CFF1F501AA500BBD605 /* CountDownButton.swift in Sources */,
@@ -1230,6 +1273,7 @@
 				F15CBDFB1F45458D00BFEF23 /* PageTitleView.swift in Sources */,
 				F1CA643B1F53FE4A00B6582D /* FeedDecisionViewController.swift in Sources */,
 				F15CBDB71F45458D00BFEF23 /* UIImageView+Extension.swift in Sources */,
+				F1B16A3C1F63619700A72F83 /* LmyPicker.swift in Sources */,
 				F1E4B9341F56443000ED9C0A /* HomeListTableViewCell.swift in Sources */,
 				F15CBE011F45458D00BFEF23 /* WMProgressView.m in Sources */,
 				F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */,
@@ -1240,6 +1284,7 @@
 				F15CBE001F45458D00BFEF23 /* WMMenuView.m in Sources */,
 				F1BEAA251F553D1A007DA0A3 /* FeedKnowledageModel.swift in Sources */,
 				F1EF32141F514AAC004EA52C /* HomeSectionHeaderView.swift in Sources */,
+				F1B16A381F63606B00A72F83 /* DateLmyExtension.swift in Sources */,
 				F15CBE021F45458D00BFEF23 /* WMScrollView.m in Sources */,
 				F15CBDBA1F45458D00BFEF23 /* UIView+Extension.swift in Sources */,
 				F15CBDB41F45458D00BFEF23 /* UIColor+Color.swift in Sources */,
@@ -1251,14 +1296,17 @@
 				F15CBDAE1F45458D00BFEF23 /* Array+Extension.swift in Sources */,
 				F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */,
 				F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */,
+				F1B16A391F63606B00A72F83 /* UIColorLmyExtension.swift in Sources */,
 				F15CBE2F1F45471900BFEF23 /* IntroduceViewController.swift in Sources */,
 				F15CBDB21F45458D00BFEF23 /* UIApplication+Extension.swift in Sources */,
 				F1EF32161F514F0C004EA52C /* HomeTableViewCell.swift in Sources */,
 				F15CBDF81F45458D00BFEF23 /* CommonTool.swift in Sources */,
+				F13FCDFF1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift in Sources */,
 				F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */,
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
 				F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */,
 				F15CBE031F45458D00BFEF23 /* WMPageController.m in Sources */,
+				F13FCDFD1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift in Sources */,
 				F15CBDFC1F45458D00BFEF23 /* RequestFailedView.swift in Sources */,
 				F15CBDBB1F45458D00BFEF23 /* UIView+Frame.swift in Sources */,
 				F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */,

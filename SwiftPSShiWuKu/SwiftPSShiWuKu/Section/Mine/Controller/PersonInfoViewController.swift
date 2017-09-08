@@ -27,8 +27,8 @@ class PersonInfoViewController: BaseViewController {
     
     // 初始化数据
     func initialData() {
-        titleArray = ["用户名", "性别", "年龄", "身高", "体重"]
-        contentArray = ["思思", "女", "24", "157", "55"]
+        titleArray = ["用户名", "性别", "年龄", "身高", "体重", "出生年月"]
+        contentArray = ["思思", "女", "24", "157", "55", ""]
     }
     
     func setupUI() {
@@ -58,7 +58,24 @@ extension PersonInfoViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        switch indexPath.row {
+        case 0:
+            break
+        case 1:
+            break
+        case 2:
+            break
+        case 3:
+            break
+        case 4:
+            break
+            // 选择年月日
+        case 5:
+            let picker = LmyPicker(delegate: self, style: .date)
+            picker.show()
+            break
+        default: break
+        }
     }
 }
 
@@ -84,5 +101,33 @@ extension PersonInfoViewController {
     
     func configureCell(cell: PersonInfoTableViewCell, indexPath: IndexPath) {
         
+        if indexPath.row == 0 {
+            cell.textField?.isEnabled = true
+            cell.textField?.text = "思思"
+            cell.subTitleLabel?.isHidden = true
+        } else if indexPath.row == 1 {
+            cell.textField?.isEnabled = false
+            cell.subTitleLabel?.isHidden = false
+        } else if indexPath.row == 2 {
+            cell.textField?.isEnabled = false
+            cell.subTitleLabel?.isHidden = false
+        } else if indexPath.row == 3 {
+            cell.textField?.isEnabled = false
+            cell.subTitleLabel?.isHidden = false
+        } else {
+            cell.textField?.isEnabled = false
+            cell.subTitleLabel?.isHidden = false
+        }
+    }
+}
+
+extension PersonInfoViewController: PickerDelegate {
+    
+    func chooseElements(picker: LmyPicker, content: [Int : Int]) {
+        
+    }
+    
+    func chooseDate(picker: LmyPicker, date: Date) {
+        print("date = \(date)")
     }
 }
