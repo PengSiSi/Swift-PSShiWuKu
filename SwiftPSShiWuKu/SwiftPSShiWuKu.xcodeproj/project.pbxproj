@@ -78,6 +78,8 @@
 		F1B16A391F63606B00A72F83 /* UIColorLmyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A361F63606B00A72F83 /* UIColorLmyExtension.swift */; };
 		F1B16A3C1F63619700A72F83 /* LmyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A3B1F63619700A72F83 /* LmyPicker.swift */; };
 		F1B16A3E1F6364FC00A72F83 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1B16A3D1F6364FC00A72F83 /* area.plist */; };
+		F1B16A431F6368D900A72F83 /* SexPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A421F6368D900A72F83 /* SexPickerView.swift */; };
+		F1B16A461F636E0F00A72F83 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A451F636E0F00A72F83 /* UIButton+Extension.swift */; };
 		F1BEAA101F54EEFB007DA0A3 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */; };
 		F1BEAA121F54F206007DA0A3 /* FeedHomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */; };
 		F1BEAA191F5504F6007DA0A3 /* FeedHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */; };
@@ -222,6 +224,8 @@
 		F1B16A361F63606B00A72F83 /* UIColorLmyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorLmyExtension.swift; sourceTree = "<group>"; };
 		F1B16A3B1F63619700A72F83 /* LmyPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LmyPicker.swift; sourceTree = "<group>"; };
 		F1B16A3D1F6364FC00A72F83 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = area.plist; path = Resource/Plist/area.plist; sourceTree = "<group>"; };
+		F1B16A421F6368D900A72F83 /* SexPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexPickerView.swift; sourceTree = "<group>"; };
+		F1B16A451F636E0F00A72F83 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		F1BEAA0F1F54EEFB007DA0A3 /* HomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeListModel.swift; sourceTree = "<group>"; };
 		F1BEAA171F5504F6007DA0A3 /* FeedHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHomeCell.swift; sourceTree = "<group>"; };
@@ -312,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				F1B16A3B1F63619700A72F83 /* LmyPicker.swift */,
+				F1B16A421F6368D900A72F83 /* SexPickerView.swift */,
 			);
 			path = CustomPickerView;
 			sourceTree = "<group>";
@@ -931,6 +936,7 @@
 			children = (
 				F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */,
 				F1B16A361F63606B00A72F83 /* UIColorLmyExtension.swift */,
+				F1B16A451F636E0F00A72F83 /* UIButton+Extension.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -1255,6 +1261,7 @@
 				F1FF1CFF1F501AA500BBD605 /* CountDownButton.swift in Sources */,
 				F15CBDFA1F45458D00BFEF23 /* PageContentView.swift in Sources */,
 				F1EF321A1F516287004EA52C /* GroupModel.swift in Sources */,
+				F1B16A431F6368D900A72F83 /* SexPickerView.swift in Sources */,
 				F15CBDBC1F45458D00BFEF23 /* Const.swift in Sources */,
 				F15CBDFD1F45458D00BFEF23 /* SpaceSizeTool.swift in Sources */,
 				F1DD81391F5A9C470055C8ED /* HomeModel.swift in Sources */,
@@ -1305,6 +1312,7 @@
 				F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */,
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
 				F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */,
+				F1B16A461F636E0F00A72F83 /* UIButton+Extension.swift in Sources */,
 				F15CBE031F45458D00BFEF23 /* WMPageController.m in Sources */,
 				F13FCDFD1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift in Sources */,
 				F15CBDFC1F45458D00BFEF23 /* RequestFailedView.swift in Sources */,

@@ -4,7 +4,8 @@
 //
 //  Created by limuyun on 2016/12/20.
 //  Copyright © 2016年 biiway. All rights reserved.
-//
+
+// 日期选择弹出View
 
 import UIKit
 
@@ -194,6 +195,7 @@ class LmyPicker: UIView,UIPickerViewDelegate,UIPickerViewDataSource {
     func dateChoosePressed(datePicker: UIDatePicker) {
         //print("select date \(datePicker.date.string_from(formatter: "yyyy-MM-dd"))")
     }
+    
     func doneButtonClick() {
         if pickerStyle == .nomal {
             pickerDelegate?.chooseElements(picker: self, content: tempDic)
@@ -202,9 +204,11 @@ class LmyPicker: UIView,UIPickerViewDelegate,UIPickerViewDataSource {
         }
         self.hiddenPicker()
     }
+    
     func cancelButtonClick(btn:UIButton) {
         self.hiddenPicker()
     }
+    
     public func show() {
         UIApplication.shared.keyWindow?.addSubview(self.backgroundBtn)
         UIApplication.shared.keyWindow?.addSubview(self)

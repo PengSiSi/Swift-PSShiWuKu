@@ -62,6 +62,8 @@ extension PersonInfoViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             break
         case 1:
+            let sexPicker = SexPickerView(delegate: self)
+            sexPicker.show()
             break
         case 2:
             break
@@ -129,5 +131,12 @@ extension PersonInfoViewController: PickerDelegate {
     
     func chooseDate(picker: LmyPicker, date: Date) {
         print("date = \(date)")
+    }
+}
+
+extension PersonInfoViewController: SexPickerViewDelegate {
+    
+    func chooseSex(sexPickerView: SexPickerView, sexStr: String) {
+        print(sexStr)
     }
 }
