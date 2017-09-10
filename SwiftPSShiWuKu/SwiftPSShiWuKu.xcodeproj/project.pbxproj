@@ -109,6 +109,7 @@
 		F1EF32181F51627D004EA52C /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32171F51627D004EA52C /* CategoryModel.swift */; };
 		F1EF321A1F516287004EA52C /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32191F516287004EA52C /* GroupModel.swift */; };
 		F1EF321C1F51641B004EA52C /* SubCategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF321B1F51641B004EA52C /* SubCategoriesModel.swift */; };
+		F1F1FBCD1F64C2580069EB4D /* UploadFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1FBCC1F64C2580069EB4D /* UploadFoodViewController.swift */; };
 		F1FF1CF91F5008D100BBD605 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CF81F5008D100BBD605 /* LoginViewController.swift */; };
 		F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CFA1F500CDA00BBD605 /* CustomButton.swift */; };
 		F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1CFC1F5012C900BBD605 /* RegisterViewController.swift */; };
@@ -255,6 +256,7 @@
 		F1EF32171F51627D004EA52C /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		F1EF32191F516287004EA52C /* GroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		F1EF321B1F51641B004EA52C /* SubCategoriesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoriesModel.swift; sourceTree = "<group>"; };
+		F1F1FBCC1F64C2580069EB4D /* UploadFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFoodViewController.swift; sourceTree = "<group>"; };
 		F1FF1CF81F5008D100BBD605 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F1FF1CFA1F500CDA00BBD605 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F1FF1CFC1F5012C900BBD605 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -869,6 +871,7 @@
 				F13FCDFC1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift */,
 				F13FCDFE1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift */,
 				F13FCE001F5FF3CF004D6E20 /* DraftViewController.swift */,
+				F1F1FBCC1F64C2580069EB4D /* UploadFoodViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1249,6 +1252,7 @@
 				F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */,
 				F15CBDF91F45458D00BFEF23 /* HTTPTool.swift in Sources */,
 				F1CA64451F540D0600B6582D /* FeedDetailViewController.swift in Sources */,
+				F1F1FBCD1F64C2580069EB4D /* UploadFoodViewController.swift in Sources */,
 				F1FF1CF91F5008D100BBD605 /* LoginViewController.swift in Sources */,
 				F1EF32181F51627D004EA52C /* CategoryModel.swift in Sources */,
 				F1CA64391F53FE2E00B6582D /* FeedKnowledgeViewController.swift in Sources */,

@@ -18,7 +18,7 @@ pod “SwiftyJSON”
 pod 'SnapKit'
 pod 'ObjectMapper'
 pod ‘RealmSwift’
-
+pod 'CLImagePickerTool', :git => 'https://github.com/Darren-chenchen/CLImagePickerTool.git'
 
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'

@@ -48,8 +48,9 @@ class UploadFoodDataViewController: BaseViewController {
     }
     
     func uploadButtonAction() {
-        let logginVc = LoginViewController()
-        self.navigationController?.pushViewController(logginVc, animated: true)
+//        let logginVc = LoginViewController()
+        let uploadVc = UploadFoodViewController()
+        self.navigationController?.pushViewController(uploadVc, animated: true)
     }
 }
 
