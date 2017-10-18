@@ -27,6 +27,9 @@
 		F13FCE011F5FF3CF004D6E20 /* DraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FCE001F5FF3CF004D6E20 /* DraftViewController.swift */; };
 		F1581BA61F96EA41001E65BD /* BMPlayerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BA51F96EA41001E65BD /* BMPlayerDemoViewController.swift */; };
 		F1581BA81F96EB8C001E65BD /* MyTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */; };
+		F1581BB31F97035C001E65BD /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BB11F97035C001E65BD /* VideoTableViewCell.swift */; };
+		F1581BB41F97035C001E65BD /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1581BB21F97035C001E65BD /* VideoTableViewCell.xib */; };
+		F1581BB61F971979001E65BD /* BMPlayerCustomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BB51F971979001E65BD /* BMPlayerCustomControlView.swift */; };
 		F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF41F45458D00BFEF23 /* BaseNavigationController.swift */; };
 		F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF51F45458D00BFEF23 /* BaseViewController.swift */; };
 		F15CBDAE1F45458D00BFEF23 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF91F45458D00BFEF23 /* Array+Extension.swift */; };
@@ -172,6 +175,9 @@
 		F13FCE001F5FF3CF004D6E20 /* DraftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftViewController.swift; sourceTree = "<group>"; };
 		F1581BA51F96EA41001E65BD /* BMPlayerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPlayerDemoViewController.swift; sourceTree = "<group>"; };
 		F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestViewController.swift; sourceTree = "<group>"; };
+		F1581BB11F97035C001E65BD /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		F1581BB21F97035C001E65BD /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		F1581BB51F971979001E65BD /* BMPlayerCustomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPlayerCustomControlView.swift; sourceTree = "<group>"; };
 		F15CBCF41F45458D00BFEF23 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F15CBCF51F45458D00BFEF23 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F15CBCF91F45458D00BFEF23 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
@@ -433,6 +439,9 @@
 		F1581BA41F96EA2A001E65BD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F1581BB11F97035C001E65BD /* VideoTableViewCell.swift */,
+				F1581BB21F97035C001E65BD /* VideoTableViewCell.xib */,
+				F1581BB51F971979001E65BD /* BMPlayerCustomControlView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1130,6 +1139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1BEAA1A1F5504F6007DA0A3 /* FeedHomeCell.xib in Resources */,
+				F1581BB41F97035C001E65BD /* VideoTableViewCell.xib in Resources */,
 				F15CBE511F45950C00BFEF23 /* MineHeaderView.xib in Resources */,
 				F15CBDC11F45458D00BFEF23 /* YMSharePlist.plist in Resources */,
 				F167FA121F94AC310098BC14 /* FeedHomeDetailTopView.xib in Resources */,
@@ -1343,6 +1353,7 @@
 				F15CBDFB1F45458D00BFEF23 /* PageTitleView.swift in Sources */,
 				F1CA643B1F53FE4A00B6582D /* FeedDecisionViewController.swift in Sources */,
 				F15CBDB71F45458D00BFEF23 /* UIImageView+Extension.swift in Sources */,
+				F1581BB31F97035C001E65BD /* VideoTableViewCell.swift in Sources */,
 				F1B16A3C1F63619700A72F83 /* LmyPicker.swift in Sources */,
 				F1E4B9341F56443000ED9C0A /* HomeListTableViewCell.swift in Sources */,
 				F15CBE011F45458D00BFEF23 /* WMProgressView.m in Sources */,
@@ -1357,6 +1368,7 @@
 				F1581BA81F96EB8C001E65BD /* MyTestViewController.swift in Sources */,
 				F1B16A381F63606B00A72F83 /* DateLmyExtension.swift in Sources */,
 				F167FA0E1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift in Sources */,
+				F1581BB61F971979001E65BD /* BMPlayerCustomControlView.swift in Sources */,
 				F15CBE021F45458D00BFEF23 /* WMScrollView.m in Sources */,
 				F15CBDBA1F45458D00BFEF23 /* UIView+Extension.swift in Sources */,
 				F15CBDB41F45458D00BFEF23 /* UIColor+Color.swift in Sources */,
