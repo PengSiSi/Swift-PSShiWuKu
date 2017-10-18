@@ -96,14 +96,24 @@ class UploadFoodViewController: BaseViewController {
         let commitButton = UIButton(frame: CGRect(x: 20, y: 140, width: k_ScreenWidth - 40, height: 44))
         commitButton.backgroundColor = UIColor.red
         commitButton.setTitle("提交", for: .normal)
-        commitButton.addTarget(self, action: #selector(nextStepButtonAction), for: .touchUpInside)
+        commitButton.addTarget(self, action: #selector(commitAction), for: .touchUpInside)
         secondStepView.addSubview(commitButton)
         let saveButton = UIButton(frame: CGRect(x: 20, y: 200, width: k_ScreenWidth - 40, height: 44))
         saveButton.backgroundColor = UIColor.red
         saveButton.setTitle("保存到草稿箱", for: .normal)
-        saveButton.addTarget(self, action: #selector(nextStepButtonAction), for: .touchUpInside)
+        saveButton.addTarget(self, action: #selector(saveAction), for: .touchUpInside)
         secondStepView.addSubview(saveButton)
 
+    }
+    
+    // 提交
+    func commitAction() {
+        
+    }
+    
+    // 保存
+    func saveAction() {
+        
     }
     
     func createItemView(y: CGFloat, titleStr: String, placerHolderStr: String, isArrowIcon: Bool) -> UIView {

@@ -14,8 +14,8 @@ class MineViewController: UITableViewController, MineHeaderViewDelegate {
     
     // 数据源数组
     var cells = [AnyObject]()
-    var titleArr = ["我的照片", "我的收藏", "上传食物数据"];
-    var imageNameArr = ["ic_my_photos.png", "ic_my_collect.png", "ic_my_upload.png"]
+    var titleArr = ["我的照片", "我的收藏", "上传食物数据", "MyTestDemo"];
+    var imageNameArr = ["ic_my_photos.png", "ic_my_collect.png", "ic_my_upload.png",""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,14 +66,17 @@ extension MineViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return imageNameArr.count;
+        return titleArr.count;
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: mineCellID, for: indexPath)
         cell.accessoryType = .disclosureIndicator
-        cell.imageView?.image = UIImage(named: imageNameArr[indexPath.row])
+        if let imageName: String = imageNameArr[indexPath.row] {
+            cell.imageView?.image = UIImage(named: imageName)
+        }
+        
         cell.textLabel?.text = titleArr[indexPath.row]
         cell.textLabel?.font = UIFont.systemFont(ofSize: 15)
         cell.selectionStyle = .none
@@ -95,6 +98,10 @@ extension MineViewController {
             case 2:
                 let uploadFoodDataVc = UploadFoodDataViewController()
                 self.navigationController?.pushViewController(uploadFoodDataVc, animated: true)
+                break;
+            case 3:
+                let myTestVc = MyTestViewController()
+                self.navigationController?.pushViewController(myTestVc, animated: true)
                 break;
             default:
                 break

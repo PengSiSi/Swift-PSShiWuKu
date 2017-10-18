@@ -25,6 +25,8 @@
 		F13FCDFD1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FCDFC1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift */; };
 		F13FCDFF1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FCDFE1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift */; };
 		F13FCE011F5FF3CF004D6E20 /* DraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FCE001F5FF3CF004D6E20 /* DraftViewController.swift */; };
+		F1581BA61F96EA41001E65BD /* BMPlayerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BA51F96EA41001E65BD /* BMPlayerDemoViewController.swift */; };
+		F1581BA81F96EB8C001E65BD /* MyTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */; };
 		F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF41F45458D00BFEF23 /* BaseNavigationController.swift */; };
 		F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF51F45458D00BFEF23 /* BaseViewController.swift */; };
 		F15CBDAE1F45458D00BFEF23 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF91F45458D00BFEF23 /* Array+Extension.swift */; };
@@ -72,6 +74,10 @@
 		F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */; };
 		F15D88BE1F5240AF00C4CB00 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */; };
 		F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */; };
+		F167FA0A1F94A5330098BC14 /* FeedHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA091F94A5330098BC14 /* FeedHomeDetailViewController.swift */; };
+		F167FA0C1F94A6EE0098BC14 /* FeedHomeDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */; };
+		F167FA0E1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */; };
+		F167FA121F94AC310098BC14 /* FeedHomeDetailTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F167FA111F94AC310098BC14 /* FeedHomeDetailTopView.xib */; };
 		F1A311401F5D350A001DBE52 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */; };
 		F1A311421F5D4329001DBE52 /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A311411F5D4329001DBE52 /* NewFeatureViewController.swift */; };
 		F1B16A381F63606B00A72F83 /* DateLmyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */; };
@@ -164,6 +170,8 @@
 		F13FCDFC1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFoodDataViewController.swift; sourceTree = "<group>"; };
 		F13FCDFE1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUploadFoodViewController.swift; sourceTree = "<group>"; };
 		F13FCE001F5FF3CF004D6E20 /* DraftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftViewController.swift; sourceTree = "<group>"; };
+		F1581BA51F96EA41001E65BD /* BMPlayerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPlayerDemoViewController.swift; sourceTree = "<group>"; };
+		F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestViewController.swift; sourceTree = "<group>"; };
 		F15CBCF41F45458D00BFEF23 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F15CBCF51F45458D00BFEF23 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F15CBCF91F45458D00BFEF23 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
@@ -219,6 +227,10 @@
 		F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		F167FA091F94A5330098BC14 /* FeedHomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailViewController.swift; sourceTree = "<group>"; };
+		F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailModel.swift; sourceTree = "<group>"; };
+		F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailTopView.swift; sourceTree = "<group>"; };
+		F167FA111F94AC310098BC14 /* FeedHomeDetailTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHomeDetailTopView.xib; sourceTree = "<group>"; };
 		F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		F1A311411F5D4329001DBE52 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateLmyExtension.swift; sourceTree = "<group>"; };
@@ -382,6 +394,47 @@
 				F11355291F42E958003CBF4E /* Info.plist */,
 			);
 			path = SwiftPSShiWuKuUITests;
+			sourceTree = "<group>";
+		};
+		F1581BA01F96E9E8001E65BD /* MyTestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */,
+				F1581BA11F96EA2A001E65BD /* BMPlayerDemo */,
+			);
+			path = MyTestDemo;
+			sourceTree = "<group>";
+		};
+		F1581BA11F96EA2A001E65BD /* BMPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BA21F96EA2A001E65BD /* Controller */,
+				F1581BA31F96EA2A001E65BD /* Model */,
+				F1581BA41F96EA2A001E65BD /* View */,
+			);
+			path = BMPlayerDemo;
+			sourceTree = "<group>";
+		};
+		F1581BA21F96EA2A001E65BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BA51F96EA41001E65BD /* BMPlayerDemoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1581BA31F96EA2A001E65BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1581BA41F96EA2A001E65BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F15CBCF31F45458D00BFEF23 /* Base */ = {
@@ -674,6 +727,7 @@
 		F15CBE141F45471900BFEF23 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				F1581BA01F96E9E8001E65BD /* MyTestDemo */,
 				F1A3113E1F5D34F9001DBE52 /* Guide */,
 				F15CBE151F45471900BFEF23 /* Feed */,
 				F15CBE191F45471900BFEF23 /* Home */,
@@ -705,6 +759,7 @@
 				F1CA643C1F53FE5900B6582D /* FeedEvaluateViewController.swift */,
 				F1CA643A1F53FE4A00B6582D /* FeedDecisionViewController.swift */,
 				F1CA64441F540D0600B6582D /* FeedDetailViewController.swift */,
+				F167FA091F94A5330098BC14 /* FeedHomeDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -715,6 +770,7 @@
 				F1CA64421F54038500B6582D /* FeedEvaluateModel.swift */,
 				F1BEAA111F54F206007DA0A3 /* FeedHomeListModel.swift */,
 				F1BEAA241F553D1A007DA0A3 /* FeedKnowledageModel.swift */,
+				F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -729,6 +785,8 @@
 				F1BEAA181F5504F6007DA0A3 /* FeedHomeCell.xib */,
 				F1BEAA221F55398A007DA0A3 /* FeedKnowledgeCell.swift */,
 				F1BEAA261F554BE8007DA0A3 /* FeedKnowledageMultiImageCell.swift */,
+				F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */,
+				F167FA111F94AC310098BC14 /* FeedHomeDetailTopView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1074,6 +1132,7 @@
 				F1BEAA1A1F5504F6007DA0A3 /* FeedHomeCell.xib in Resources */,
 				F15CBE511F45950C00BFEF23 /* MineHeaderView.xib in Resources */,
 				F15CBDC11F45458D00BFEF23 /* YMSharePlist.plist in Resources */,
+				F167FA121F94AC310098BC14 /* FeedHomeDetailTopView.xib in Resources */,
 				F11355121F42E958003CBF4E /* LaunchScreen.storyboard in Resources */,
 				F113550F1F42E958003CBF4E /* Assets.xcassets in Resources */,
 				F1CA64411F53FFA800B6582D /* FeedEvaluateCell.xib in Resources */,
@@ -1295,7 +1354,9 @@
 				F15CBE001F45458D00BFEF23 /* WMMenuView.m in Sources */,
 				F1BEAA251F553D1A007DA0A3 /* FeedKnowledageModel.swift in Sources */,
 				F1EF32141F514AAC004EA52C /* HomeSectionHeaderView.swift in Sources */,
+				F1581BA81F96EB8C001E65BD /* MyTestViewController.swift in Sources */,
 				F1B16A381F63606B00A72F83 /* DateLmyExtension.swift in Sources */,
+				F167FA0E1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift in Sources */,
 				F15CBE021F45458D00BFEF23 /* WMScrollView.m in Sources */,
 				F15CBDBA1F45458D00BFEF23 /* UIView+Extension.swift in Sources */,
 				F15CBDB41F45458D00BFEF23 /* UIColor+Color.swift in Sources */,
@@ -1308,6 +1369,7 @@
 				F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */,
 				F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */,
 				F1B16A391F63606B00A72F83 /* UIColorLmyExtension.swift in Sources */,
+				F167FA0C1F94A6EE0098BC14 /* FeedHomeDetailModel.swift in Sources */,
 				F15CBE2F1F45471900BFEF23 /* IntroduceViewController.swift in Sources */,
 				F15CBDB21F45458D00BFEF23 /* UIApplication+Extension.swift in Sources */,
 				F1EF32161F514F0C004EA52C /* HomeTableViewCell.swift in Sources */,
@@ -1315,6 +1377,7 @@
 				F13FCDFF1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift in Sources */,
 				F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */,
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
+				F1581BA61F96EA41001E65BD /* BMPlayerDemoViewController.swift in Sources */,
 				F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */,
 				F1B16A461F636E0F00A72F83 /* UIButton+Extension.swift in Sources */,
 				F15CBE031F45458D00BFEF23 /* WMPageController.m in Sources */,
@@ -1333,6 +1396,7 @@
 				F10C845E1F5BF695000DDB83 /* CommonSearchTableViewCell.swift in Sources */,
 				F10C84621F5BF6B1000DDB83 /* HistorySearchTableViewCell.swift in Sources */,
 				F15CBE341F45474C00BFEF23 /* MineViewController.swift in Sources */,
+				F167FA0A1F94A5330098BC14 /* FeedHomeDetailViewController.swift in Sources */,
 				F1CA643D1F53FE5900B6582D /* FeedEvaluateViewController.swift in Sources */,
 				F15CBDB01F45458D00BFEF23 /* NSDate+Extension.swift in Sources */,
 			);

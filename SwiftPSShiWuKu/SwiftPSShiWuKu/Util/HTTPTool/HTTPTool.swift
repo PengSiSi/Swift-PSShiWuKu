@@ -54,7 +54,7 @@ extension HTTPTool {
                     //  if let value = response.result.value as? [String: AnyObject] {
                     success(value as! [String : AnyObject])
                     let json = JSON(value)
-                    print(json)
+//                    print(json)
                 // 失败的回调
                 case .failure(let error):
                     failture(error)

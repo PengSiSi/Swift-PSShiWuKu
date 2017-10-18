@@ -1,0 +1,6 @@
+framework module SafeAreaExtension {
+  umbrella header "SafeAreaExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
