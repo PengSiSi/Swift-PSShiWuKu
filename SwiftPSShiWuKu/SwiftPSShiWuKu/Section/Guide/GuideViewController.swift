@@ -75,7 +75,7 @@ class GuideViewController: UIViewController {
         print("开始体验")
     }
     
-    func tapImageView() {
+    @objc func tapImageView() {
         if tapBlock != nil {
             tapBlock!()
         }

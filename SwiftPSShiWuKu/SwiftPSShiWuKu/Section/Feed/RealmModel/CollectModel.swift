@@ -11,13 +11,13 @@ import RealmSwift
 
 class CollectModel: Object {
 
-     dynamic var background = ""
-     dynamic var image_url = ""
-     dynamic var content_type = 0
-     dynamic var link = ""
-     dynamic var source = ""
-     dynamic var tail = ""
-     dynamic var title = ""
-     dynamic var type = ""
+    @objc dynamic var background = ""
+    @objc dynamic var image_url = ""
+    @objc dynamic var content_type = 0
+    @objc dynamic var link = ""
+    @objc dynamic var source = ""
+    @objc dynamic var tail = ""
+    @objc dynamic var title = ""
+    @objc dynamic var type = ""
 
 }

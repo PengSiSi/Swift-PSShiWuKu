@@ -73,7 +73,7 @@ class RegisterViewController: BaseViewController {
     }
     
     // 下一步
-    func nextStepAction() {
+    @objc func nextStepAction() {
         
     }
     

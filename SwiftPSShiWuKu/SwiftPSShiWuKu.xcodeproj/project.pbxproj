@@ -30,6 +30,12 @@
 		F1581BB31F97035C001E65BD /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BB11F97035C001E65BD /* VideoTableViewCell.swift */; };
 		F1581BB41F97035C001E65BD /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1581BB21F97035C001E65BD /* VideoTableViewCell.xib */; };
 		F1581BB61F971979001E65BD /* BMPlayerCustomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BB51F971979001E65BD /* BMPlayerCustomControlView.swift */; };
+		F1581BBC1F9722E0001E65BD /* CustomNavigationBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BBB1F9722E0001E65BD /* CustomNavigationBarVC.swift */; };
+		F1581BBE1F97236E001E65BD /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BBD1F97236E001E65BD /* CustomNavigationBar.swift */; };
+		F1581BC01F9725CA001E65BD /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BBF1F9725CA001E65BD /* CustomSearchBar.swift */; };
+		F1581BC61F97376E001E65BD /* TableViewRowHeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BC51F97376E001E65BD /* TableViewRowHeightVC.swift */; };
+		F1581BC81F973856001E65BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BC71F973856001E65BD /* TableViewCell.swift */; };
+		F1581BCA1F973C85001E65BD /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1581BC91F973C85001E65BD /* TableViewCell1.swift */; };
 		F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF41F45458D00BFEF23 /* BaseNavigationController.swift */; };
 		F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF51F45458D00BFEF23 /* BaseViewController.swift */; };
 		F15CBDAE1F45458D00BFEF23 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CBCF91F45458D00BFEF23 /* Array+Extension.swift */; };
@@ -178,6 +184,12 @@
 		F1581BB11F97035C001E65BD /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		F1581BB21F97035C001E65BD /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		F1581BB51F971979001E65BD /* BMPlayerCustomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPlayerCustomControlView.swift; sourceTree = "<group>"; };
+		F1581BBB1F9722E0001E65BD /* CustomNavigationBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarVC.swift; sourceTree = "<group>"; };
+		F1581BBD1F97236E001E65BD /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		F1581BBF1F9725CA001E65BD /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		F1581BC51F97376E001E65BD /* TableViewRowHeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRowHeightVC.swift; sourceTree = "<group>"; };
+		F1581BC71F973856001E65BD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F1581BC91F973C85001E65BD /* TableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 		F15CBCF41F45458D00BFEF23 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F15CBCF51F45458D00BFEF23 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F15CBCF91F45458D00BFEF23 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
@@ -406,6 +418,8 @@
 			isa = PBXGroup;
 			children = (
 				F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */,
+				F1581BC11F97374E001E65BD /* TableViewRowHeightDemo */,
+				F1581BB71F9722C6001E65BD /* CustomNavigationBarDemo */,
 				F1581BA11F96EA2A001E65BD /* BMPlayerDemo */,
 			);
 			path = MyTestDemo;
@@ -442,6 +456,74 @@
 				F1581BB11F97035C001E65BD /* VideoTableViewCell.swift */,
 				F1581BB21F97035C001E65BD /* VideoTableViewCell.xib */,
 				F1581BB51F971979001E65BD /* BMPlayerCustomControlView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1581BB71F9722C6001E65BD /* CustomNavigationBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BB81F9722C6001E65BD /* Controller */,
+				F1581BB91F9722C6001E65BD /* Model */,
+				F1581BBA1F9722C6001E65BD /* View */,
+			);
+			path = CustomNavigationBarDemo;
+			sourceTree = "<group>";
+		};
+		F1581BB81F9722C6001E65BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BBB1F9722E0001E65BD /* CustomNavigationBarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1581BB91F9722C6001E65BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1581BBA1F9722C6001E65BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BBD1F97236E001E65BD /* CustomNavigationBar.swift */,
+				F1581BBF1F9725CA001E65BD /* CustomSearchBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1581BC11F97374E001E65BD /* TableViewRowHeightDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BC21F97374E001E65BD /* Controller */,
+				F1581BC31F97374E001E65BD /* Model */,
+				F1581BC41F97374E001E65BD /* View */,
+			);
+			path = TableViewRowHeightDemo;
+			sourceTree = "<group>";
+		};
+		F1581BC21F97374E001E65BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BC51F97376E001E65BD /* TableViewRowHeightVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1581BC31F97374E001E65BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1581BC41F97374E001E65BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1581BC71F973856001E65BD /* TableViewCell.swift */,
+				F1581BC91F973C85001E65BD /* TableViewCell1.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1331,6 +1413,7 @@
 				F1A311421F5D4329001DBE52 /* NewFeatureViewController.swift in Sources */,
 				F15CBDF71F45458D00BFEF23 /* AppInfoTool.swift in Sources */,
 				F1A311401F5D350A001DBE52 /* GuideViewController.swift in Sources */,
+				F1581BBC1F9722E0001E65BD /* CustomNavigationBarVC.swift in Sources */,
 				F1FF1CFF1F501AA500BBD605 /* CountDownButton.swift in Sources */,
 				F15CBDFA1F45458D00BFEF23 /* PageContentView.swift in Sources */,
 				F1EF321A1F516287004EA52C /* GroupModel.swift in Sources */,
@@ -1360,6 +1443,7 @@
 				F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */,
 				F15CBE361F45475700BFEF23 /* FeedViewController.swift in Sources */,
 				F1BEAA211F553188007DA0A3 /* CollectModel.swift in Sources */,
+				F1581BC81F973856001E65BD /* TableViewCell.swift in Sources */,
 				F15CBDFE1F45458D00BFEF23 /* WMFooldView.m in Sources */,
 				F15CBDB51F45458D00BFEF23 /* UIDevice+Extension.swift in Sources */,
 				F15CBE001F45458D00BFEF23 /* WMMenuView.m in Sources */,
@@ -1373,6 +1457,7 @@
 				F15CBDBA1F45458D00BFEF23 /* UIView+Extension.swift in Sources */,
 				F15CBDB41F45458D00BFEF23 /* UIColor+Color.swift in Sources */,
 				F15CBDF61F45458D00BFEF23 /* AlertView.swift in Sources */,
+				F1581BBE1F97236E001E65BD /* CustomNavigationBar.swift in Sources */,
 				F15CBDBD1F45458D00BFEF23 /* UtilsMacro.swift in Sources */,
 				F1CA64431F54038500B6582D /* FeedEvaluateModel.swift in Sources */,
 				F1CA64471F540DFB00B6582D /* FeedDetailBottomView.swift in Sources */,
@@ -1389,8 +1474,10 @@
 				F13FCDFF1F5FF3B5004D6E20 /* MyUploadFoodViewController.swift in Sources */,
 				F1FF1CFB1F500CDB00BBD605 /* CustomButton.swift in Sources */,
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
+				F1581BC61F97376E001E65BD /* TableViewRowHeightVC.swift in Sources */,
 				F1581BA61F96EA41001E65BD /* BMPlayerDemoViewController.swift in Sources */,
 				F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */,
+				F1581BCA1F973C85001E65BD /* TableViewCell1.swift in Sources */,
 				F1B16A461F636E0F00A72F83 /* UIButton+Extension.swift in Sources */,
 				F15CBE031F45458D00BFEF23 /* WMPageController.m in Sources */,
 				F13FCDFD1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift in Sources */,
@@ -1398,6 +1485,7 @@
 				F15CBDBB1F45458D00BFEF23 /* UIView+Frame.swift in Sources */,
 				F15CBDAC1F45458D00BFEF23 /* BaseNavigationController.swift in Sources */,
 				F15CBE531F459B7500BFEF23 /* HomeHeaderView.swift in Sources */,
+				F1581BC01F9725CA001E65BD /* CustomSearchBar.swift in Sources */,
 				F1BEAA191F5504F6007DA0A3 /* FeedHomeCell.swift in Sources */,
 				F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */,
 				F1BEAA231F55398A007DA0A3 /* FeedKnowledgeCell.swift in Sources */,
