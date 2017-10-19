@@ -116,6 +116,11 @@
 		F1DD813B1F5AA5190055C8ED /* PersonInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD813A1F5AA5190055C8ED /* PersonInfoTableViewCell.swift */; };
 		F1E4B9341F56443000ED9C0A /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4B9321F56443000ED9C0A /* HomeListTableViewCell.swift */; };
 		F1E4B9351F56443000ED9C0A /* HomeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E4B9331F56443000ED9C0A /* HomeListTableViewCell.xib */; };
+		F1E528811F983AC100F9A0DE /* ImageBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E528801F983AC100F9A0DE /* ImageBrowserViewController.swift */; };
+		F1E528841F983B1400F9A0DE /* ImageBrowserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E528821F983B1400F9A0DE /* ImageBrowserTableViewCell.swift */; };
+		F1E528851F983B1400F9A0DE /* ImageBrowserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E528831F983B1400F9A0DE /* ImageBrowserTableViewCell.xib */; };
+		F1E528861F98796B00F9A0DE /* HJImageBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E528791F98399900F9A0DE /* HJImageBrowser.swift */; };
+		F1E528881F987BD000F9A0DE /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E528871F987BCF00F9A0DE /* GlobalVariables.swift */; };
 		F1EF320E1F50FE2A004EA52C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */; };
 		F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */; };
 		F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF32111F5112DC004EA52C /* SearchBarView.swift */; };
@@ -278,6 +283,11 @@
 		F1DD813A1F5AA5190055C8ED /* PersonInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoTableViewCell.swift; sourceTree = "<group>"; };
 		F1E4B9321F56443000ED9C0A /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
 		F1E4B9331F56443000ED9C0A /* HomeListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeListTableViewCell.xib; sourceTree = "<group>"; };
+		F1E528791F98399900F9A0DE /* HJImageBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJImageBrowser.swift; sourceTree = "<group>"; };
+		F1E528801F983AC100F9A0DE /* ImageBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBrowserViewController.swift; sourceTree = "<group>"; };
+		F1E528821F983B1400F9A0DE /* ImageBrowserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBrowserTableViewCell.swift; sourceTree = "<group>"; };
+		F1E528831F983B1400F9A0DE /* ImageBrowserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageBrowserTableViewCell.xib; sourceTree = "<group>"; };
+		F1E528871F987BCF00F9A0DE /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		F1EF320D1F50FE2A004EA52C /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F1EF320F1F510F7B004EA52C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		F1EF32111F5112DC004EA52C /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
@@ -418,6 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */,
+				F1E5287A1F983A5E00F9A0DE /* ImageBrowserDemo */,
 				F1581BC11F97374E001E65BD /* TableViewRowHeightDemo */,
 				F1581BB71F9722C6001E65BD /* CustomNavigationBarDemo */,
 				F1581BA11F96EA2A001E65BD /* BMPlayerDemo */,
@@ -658,6 +669,7 @@
 		F15CBD111F45458D00BFEF23 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				F1E528871F987BCF00F9A0DE /* GlobalVariables.swift */,
 				F15CBD121F45458D00BFEF23 /* Const.swift */,
 				F15CBD131F45458D00BFEF23 /* UtilsMacro.swift */,
 			);
@@ -710,6 +722,7 @@
 		F15CBD6F1F45458D00BFEF23 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				F1E528781F98399900F9A0DE /* HJImageBrowser */,
 				F10CD3AF1F6287A7000F352D /* CustomPickerView */,
 				F15CBD701F45458D00BFEF23 /* AlertView */,
 				F15CBD721F45458D00BFEF23 /* AppInfoTool */,
@@ -1101,6 +1114,48 @@
 			path = RealmModel;
 			sourceTree = "<group>";
 		};
+		F1E528781F98399900F9A0DE /* HJImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				F1E528791F98399900F9A0DE /* HJImageBrowser.swift */,
+			);
+			path = HJImageBrowser;
+			sourceTree = "<group>";
+		};
+		F1E5287A1F983A5E00F9A0DE /* ImageBrowserDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1E5287B1F983A5E00F9A0DE /* Controller */,
+				F1E5287C1F983A5E00F9A0DE /* Model */,
+				F1E5287D1F983A5E00F9A0DE /* View */,
+			);
+			path = ImageBrowserDemo;
+			sourceTree = "<group>";
+		};
+		F1E5287B1F983A5E00F9A0DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1E528801F983AC100F9A0DE /* ImageBrowserViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1E5287C1F983A5E00F9A0DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1E5287D1F983A5E00F9A0DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1E528821F983B1400F9A0DE /* ImageBrowserTableViewCell.swift */,
+				F1E528831F983B1400F9A0DE /* ImageBrowserTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1225,6 +1280,7 @@
 				F15CBE511F45950C00BFEF23 /* MineHeaderView.xib in Resources */,
 				F15CBDC11F45458D00BFEF23 /* YMSharePlist.plist in Resources */,
 				F167FA121F94AC310098BC14 /* FeedHomeDetailTopView.xib in Resources */,
+				F1E528851F983B1400F9A0DE /* ImageBrowserTableViewCell.xib in Resources */,
 				F11355121F42E958003CBF4E /* LaunchScreen.storyboard in Resources */,
 				F113550F1F42E958003CBF4E /* Assets.xcassets in Resources */,
 				F1CA64411F53FFA800B6582D /* FeedEvaluateCell.xib in Resources */,
@@ -1398,6 +1454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E528861F98796B00F9A0DE /* HJImageBrowser.swift in Sources */,
 				F13FCE011F5FF3CF004D6E20 /* DraftViewController.swift in Sources */,
 				F15CBDB61F45458D00BFEF23 /* UIImage+Extension.swift in Sources */,
 				F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */,
@@ -1411,6 +1468,7 @@
 				F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */,
 				F1EF32121F5112DC004EA52C /* SearchBarView.swift in Sources */,
 				F1A311421F5D4329001DBE52 /* NewFeatureViewController.swift in Sources */,
+				F1E528841F983B1400F9A0DE /* ImageBrowserTableViewCell.swift in Sources */,
 				F15CBDF71F45458D00BFEF23 /* AppInfoTool.swift in Sources */,
 				F1A311401F5D350A001DBE52 /* GuideViewController.swift in Sources */,
 				F1581BBC1F9722E0001E65BD /* CustomNavigationBarVC.swift in Sources */,
@@ -1435,9 +1493,11 @@
 				F15CBE301F45471900BFEF23 /* MainTabBarController.swift in Sources */,
 				F15CBDFB1F45458D00BFEF23 /* PageTitleView.swift in Sources */,
 				F1CA643B1F53FE4A00B6582D /* FeedDecisionViewController.swift in Sources */,
+				F1E528881F987BD000F9A0DE /* GlobalVariables.swift in Sources */,
 				F15CBDB71F45458D00BFEF23 /* UIImageView+Extension.swift in Sources */,
 				F1581BB31F97035C001E65BD /* VideoTableViewCell.swift in Sources */,
 				F1B16A3C1F63619700A72F83 /* LmyPicker.swift in Sources */,
+				F1E528811F983AC100F9A0DE /* ImageBrowserViewController.swift in Sources */,
 				F1E4B9341F56443000ED9C0A /* HomeListTableViewCell.swift in Sources */,
 				F15CBE011F45458D00BFEF23 /* WMProgressView.m in Sources */,
 				F15CBE4F1F45931D00BFEF23 /* MineHeaderView.swift in Sources */,

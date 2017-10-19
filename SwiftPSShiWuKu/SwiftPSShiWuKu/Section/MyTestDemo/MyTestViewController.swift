@@ -14,7 +14,7 @@ class MyTestViewController: UITableViewController {
     
     // 数据源数组
     var cells = [AnyObject]()
-    var titleArr = ["BMPlayerDemo", "自定义导航栏titleView", "TableView自适用高度"];
+    var titleArr = ["BMPlayerDemo", "自定义导航栏titleView", "TableView自适用高度", "ImageBrowserDemo"];
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "MyTestDemo"
@@ -79,8 +79,8 @@ extension MyTestViewController {
             self.navigationController?.pushViewController(tableViewRowHeightVc, animated: false)
             break;
         case 3:
-            let tableViewRowHeightVc = TableViewRowHeightVC()
-            self.navigationController?.pushViewController(tableViewRowHeightVc, animated: false)
+            let imageBrowserVc = ImageBrowserViewController()
+            self.navigationController?.pushViewController(imageBrowserVc, animated: false)
             break;
         default:
             break
