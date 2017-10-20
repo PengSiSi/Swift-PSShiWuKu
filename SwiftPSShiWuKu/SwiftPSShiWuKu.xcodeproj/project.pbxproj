@@ -254,6 +254,12 @@
 		F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailModel.swift; sourceTree = "<group>"; };
 		F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailTopView.swift; sourceTree = "<group>"; };
 		F167FA111F94AC310098BC14 /* FeedHomeDetailTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHomeDetailTopView.xib; sourceTree = "<group>"; };
+		F186BAB11F999BDC0082C8D5 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		F186BAB21F999BDC0082C8D5 /* DaisyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyLog.swift; sourceTree = "<group>"; };
+		F186BAB31F999BDC0082C8D5 /* DaisyNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyNet.swift; sourceTree = "<group>"; };
+		F186BAB41F999BDC0082C8D5 /* DaisyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyValue.swift; sourceTree = "<group>"; };
+		F186BAB51F999BDC0082C8D5 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		F186BAB61F999BDC0082C8D5 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		F1A311411F5D4329001DBE52 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateLmyExtension.swift; sourceTree = "<group>"; };
@@ -722,6 +728,7 @@
 		F15CBD6F1F45458D00BFEF23 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				F186BAB01F999BDC0082C8D5 /* DaisyNet */,
 				F1E528781F98399900F9A0DE /* HJImageBrowser */,
 				F10CD3AF1F6287A7000F352D /* CustomPickerView */,
 				F15CBD701F45458D00BFEF23 /* AlertView */,
@@ -1085,6 +1092,19 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F186BAB01F999BDC0082C8D5 /* DaisyNet */ = {
+			isa = PBXGroup;
+			children = (
+				F186BAB11F999BDC0082C8D5 /* CacheManager.swift */,
+				F186BAB21F999BDC0082C8D5 /* DaisyLog.swift */,
+				F186BAB31F999BDC0082C8D5 /* DaisyNet.swift */,
+				F186BAB41F999BDC0082C8D5 /* DaisyValue.swift */,
+				F186BAB51F999BDC0082C8D5 /* DownloadManager.swift */,
+				F186BAB61F999BDC0082C8D5 /* RequestManager.swift */,
+			);
+			path = DaisyNet;
 			sourceTree = "<group>";
 		};
 		F1A3113E1F5D34F9001DBE52 /* Guide */ = {
