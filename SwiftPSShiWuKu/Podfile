@@ -24,6 +24,10 @@ pod 'RxSwift', '~> 3.6.1'           # 响应式编程框架 https://github.com/R
 pod 'RxCocoa', '~> 3.6.1'           # 响应式编程框架 https://github.com/ReactiveX/RxSwift
 pod ‘BMPlayer’
 pod 'Cache', '~> 4.0.4'
+pod 'YFMoreViewController'
+pod 'MonkeyKing'
+
+
 
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, ’11.0’
