@@ -83,10 +83,19 @@
 		F15D88BD1F5240AF00C4CB00 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */; };
 		F15D88BE1F5240AF00C4CB00 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */; };
 		F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */; };
+		F167138B1FA0692000394D7E /* TableViewSectionHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167138A1FA0692000394D7E /* TableViewSectionHeaderVC.swift */; };
+		F167138D1FA069A000394D7E /* SwipeOutSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167138C1FA069A000394D7E /* SwipeOutSectionHeaderView.swift */; };
 		F167FA0A1F94A5330098BC14 /* FeedHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA091F94A5330098BC14 /* FeedHomeDetailViewController.swift */; };
 		F167FA0C1F94A6EE0098BC14 /* FeedHomeDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */; };
 		F167FA0E1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */; };
 		F167FA121F94AC310098BC14 /* FeedHomeDetailTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F167FA111F94AC310098BC14 /* FeedHomeDetailTopView.xib */; };
+		F186BABC1F999E1A0082C8D5 /* DataCacheNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BABB1F999E1A0082C8D5 /* DataCacheNetViewController.swift */; };
+		F186BABE1F99BDC20082C8D5 /* DaisyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB21F999BDC0082C8D5 /* DaisyLog.swift */; };
+		F186BABF1F99BDC20082C8D5 /* DaisyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB31F999BDC0082C8D5 /* DaisyNet.swift */; };
+		F186BAC01F99BDC20082C8D5 /* DaisyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB41F999BDC0082C8D5 /* DaisyValue.swift */; };
+		F186BAC11F99C0AD0082C8D5 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB61F999BDC0082C8D5 /* RequestManager.swift */; };
+		F186BAC21F99C0CB0082C8D5 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB51F999BDC0082C8D5 /* DownloadManager.swift */; };
+		F186BAC31F99C0E70082C8D5 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB11F999BDC0082C8D5 /* CacheManager.swift */; };
 		F1A311401F5D350A001DBE52 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */; };
 		F1A311421F5D4329001DBE52 /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A311411F5D4329001DBE52 /* NewFeatureViewController.swift */; };
 		F1B16A381F63606B00A72F83 /* DateLmyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */; };
@@ -250,6 +259,8 @@
 		F15D88BB1F5240AF00C4CB00 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F15D88BC1F5240AF00C4CB00 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		F167138A1FA0692000394D7E /* TableViewSectionHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionHeaderVC.swift; sourceTree = "<group>"; };
+		F167138C1FA069A000394D7E /* SwipeOutSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeOutSectionHeaderView.swift; sourceTree = "<group>"; };
 		F167FA091F94A5330098BC14 /* FeedHomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailViewController.swift; sourceTree = "<group>"; };
 		F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailModel.swift; sourceTree = "<group>"; };
 		F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailTopView.swift; sourceTree = "<group>"; };
@@ -260,6 +271,7 @@
 		F186BAB41F999BDC0082C8D5 /* DaisyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyValue.swift; sourceTree = "<group>"; };
 		F186BAB51F999BDC0082C8D5 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		F186BAB61F999BDC0082C8D5 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		F186BABB1F999E1A0082C8D5 /* DataCacheNetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCacheNetViewController.swift; sourceTree = "<group>"; };
 		F1A3113F1F5D350A001DBE52 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		F1A311411F5D4329001DBE52 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		F1B16A351F63606B00A72F83 /* DateLmyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateLmyExtension.swift; sourceTree = "<group>"; };
@@ -434,6 +446,8 @@
 			isa = PBXGroup;
 			children = (
 				F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */,
+				F16713861FA0690B00394D7E /* TableViewSectionHeaderDeleteDemo */,
+				F186BAB71F999DEF0082C8D5 /* DataCacheNetDemo */,
 				F1E5287A1F983A5E00F9A0DE /* ImageBrowserDemo */,
 				F1581BC11F97374E001E65BD /* TableViewRowHeightDemo */,
 				F1581BB71F9722C6001E65BD /* CustomNavigationBarDemo */,
@@ -1094,6 +1108,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F16713861FA0690B00394D7E /* TableViewSectionHeaderDeleteDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F16713871FA0690B00394D7E /* Controller */,
+				F16713881FA0690B00394D7E /* Model */,
+				F16713891FA0690B00394D7E /* View */,
+			);
+			path = TableViewSectionHeaderDeleteDemo;
+			sourceTree = "<group>";
+		};
+		F16713871FA0690B00394D7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F167138A1FA0692000394D7E /* TableViewSectionHeaderVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F16713881FA0690B00394D7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F16713891FA0690B00394D7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F167138C1FA069A000394D7E /* SwipeOutSectionHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F186BAB01F999BDC0082C8D5 /* DaisyNet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1105,6 +1152,14 @@
 				F186BAB61F999BDC0082C8D5 /* RequestManager.swift */,
 			);
 			path = DaisyNet;
+			sourceTree = "<group>";
+		};
+		F186BAB71F999DEF0082C8D5 /* DataCacheNetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F186BABB1F999E1A0082C8D5 /* DataCacheNetViewController.swift */,
+			);
+			path = DataCacheNetDemo;
 			sourceTree = "<group>";
 		};
 		F1A3113E1F5D34F9001DBE52 /* Guide */ = {
@@ -1474,6 +1529,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F186BAC31F99C0E70082C8D5 /* CacheManager.swift in Sources */,
+				F186BAC21F99C0CB0082C8D5 /* DownloadManager.swift in Sources */,
+				F186BAC11F99C0AD0082C8D5 /* RequestManager.swift in Sources */,
+				F186BABE1F99BDC20082C8D5 /* DaisyLog.swift in Sources */,
+				F186BABF1F99BDC20082C8D5 /* DaisyNet.swift in Sources */,
+				F186BAC01F99BDC20082C8D5 /* DaisyValue.swift in Sources */,
 				F1E528861F98796B00F9A0DE /* HJImageBrowser.swift in Sources */,
 				F13FCE011F5FF3CF004D6E20 /* DraftViewController.swift in Sources */,
 				F15CBDB61F45458D00BFEF23 /* UIImage+Extension.swift in Sources */,
@@ -1544,6 +1605,7 @@
 				F15CBDB31F45458D00BFEF23 /* UIBarButtonItem+Extension.swift in Sources */,
 				F15CBDAE1F45458D00BFEF23 /* Array+Extension.swift in Sources */,
 				F1EF32101F510F7B004EA52C /* SettingTableViewCell.swift in Sources */,
+				F167138B1FA0692000394D7E /* TableViewSectionHeaderVC.swift in Sources */,
 				F15CBDAD1F45458D00BFEF23 /* BaseViewController.swift in Sources */,
 				F1B16A391F63606B00A72F83 /* UIColorLmyExtension.swift in Sources */,
 				F167FA0C1F94A6EE0098BC14 /* FeedHomeDetailModel.swift in Sources */,
@@ -1556,10 +1618,12 @@
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
 				F1581BC61F97376E001E65BD /* TableViewRowHeightVC.swift in Sources */,
 				F1581BA61F96EA41001E65BD /* BMPlayerDemoViewController.swift in Sources */,
+				F167138D1FA069A000394D7E /* SwipeOutSectionHeaderView.swift in Sources */,
 				F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */,
 				F1581BCA1F973C85001E65BD /* TableViewCell1.swift in Sources */,
 				F1B16A461F636E0F00A72F83 /* UIButton+Extension.swift in Sources */,
 				F15CBE031F45458D00BFEF23 /* WMPageController.m in Sources */,
+				F186BABC1F999E1A0082C8D5 /* DataCacheNetViewController.swift in Sources */,
 				F13FCDFD1F5FF1F6004D6E20 /* UploadFoodDataViewController.swift in Sources */,
 				F15CBDFC1F45458D00BFEF23 /* RequestFailedView.swift in Sources */,
 				F15CBDBB1F45458D00BFEF23 /* UIView+Frame.swift in Sources */,

@@ -7,6 +7,8 @@ PODS:
     - BMPlayer/Core
     - NVActivityIndicatorView (~> 3.5)
     - SnapKit (~> 3.2)
+  - Cache (4.0.4):
+    - SwiftHash (~> 2.0.0)
   - CLImagePickerTool (2.1.0)
   - Kingfisher (3.10.4)
   - NVActivityIndicatorView (3.7.0):
@@ -24,11 +26,13 @@ PODS:
   - RxSwift (3.6.1)
   - SafeAreaExtension (0.1.0)
   - SnapKit (3.2.0)
+  - SwiftHash (2.0.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
   - BMPlayer
+  - Cache (~> 4.0.4)
   - CLImagePickerTool (from `https://github.com/Darren-chenchen/CLImagePickerTool.git`)
   - Kingfisher
   - ObjectMapper
@@ -52,6 +56,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   BMPlayer: e68ba160d9c05ea5fffc31d37448aa02433418ab
+  Cache: 1b3907ee2f5a457e7cfe9ac0be22dc9207f55a09
   CLImagePickerTool: f7a6d077d60943036190e0797e52d8337cd94972
   Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
   NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
@@ -63,8 +68,9 @@ SPEC CHECKSUMS:
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   SafeAreaExtension: 35aecc1ce95c96489c845b37a97050b127178982
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftHash: d2e09b13495447178cdfb8e46e54a5c46f15f5a9
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: d31d11a8d560346a83eca2689fc23ea4768117a4
+PODFILE CHECKSUM: dcba076d148f6f8b817bc8f71f595eb480694c0a
 
 COCOAPODS: 1.3.0.beta.1
