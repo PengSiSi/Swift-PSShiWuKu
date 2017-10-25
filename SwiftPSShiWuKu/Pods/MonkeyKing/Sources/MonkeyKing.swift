@@ -18,14 +18,15 @@ public class MonkeyKing: NSObject {
     var accountSet = Set<Account>()
 
     var oauthCompletionHandler: OAuthCompletionHandler?
-    private var deliverCompletionHandler: DeliverCompletionHandler?
-    private var payCompletionHandler: PayCompletionHandler?
+     var deliverCompletionHandler: DeliverCompletionHandler?
+     var payCompletionHandler: PayCompletionHandler?
 
-    private var customAlipayOrderScheme: String?
+     var customAlipayOrderScheme: String?
 
     var webView: WKWebView?
 
     private override init() {
+        
     }
 
     public enum Account: Hashable {

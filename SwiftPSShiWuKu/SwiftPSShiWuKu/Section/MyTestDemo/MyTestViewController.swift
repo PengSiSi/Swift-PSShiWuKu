@@ -14,7 +14,7 @@ class MyTestViewController: UITableViewController {
     
     // 数据源数组
     var cells = [AnyObject]()
-    var titleArr = ["BMPlayerDemo", "自定义导航栏titleView", "TableView自适用高度", "ImageBrowserDemo", "网络请求缓存<待完善>", "section header增加滑动删除功能"];
+    var titleArr = ["BMPlayerDemo", "自定义导航栏titleView", "TableView自适用高度", "ImageBrowserDemo", "网络请求缓存<待完善>", "section header增加滑动删除功能", "分享Demo"];
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "MyTestDemo"
@@ -89,6 +89,10 @@ extension MyTestViewController {
         case 5:
             let tableViewSectionHeaderVC = TableViewSectionHeaderVC()
             self.navigationController?.pushViewController(tableViewSectionHeaderVC, animated: false)
+            break;
+        case 6:
+            let shareVC = ShareViewController()
+            self.navigationController?.pushViewController(shareVC, animated: false)
             break;
         default:
             break

@@ -85,6 +85,7 @@
 		F15D88C01F524B9000C4CB00 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */; };
 		F167138B1FA0692000394D7E /* TableViewSectionHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167138A1FA0692000394D7E /* TableViewSectionHeaderVC.swift */; };
 		F167138D1FA069A000394D7E /* SwipeOutSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167138C1FA069A000394D7E /* SwipeOutSectionHeaderView.swift */; };
+		F16713901FA078FD00394D7E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167138F1FA078FD00394D7E /* ShareViewController.swift */; };
 		F167FA0A1F94A5330098BC14 /* FeedHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA091F94A5330098BC14 /* FeedHomeDetailViewController.swift */; };
 		F167FA0C1F94A6EE0098BC14 /* FeedHomeDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */; };
 		F167FA0E1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */; };
@@ -261,6 +262,7 @@
 		F15D88BF1F524B9000C4CB00 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		F167138A1FA0692000394D7E /* TableViewSectionHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionHeaderVC.swift; sourceTree = "<group>"; };
 		F167138C1FA069A000394D7E /* SwipeOutSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeOutSectionHeaderView.swift; sourceTree = "<group>"; };
+		F167138F1FA078FD00394D7E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		F167FA091F94A5330098BC14 /* FeedHomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailViewController.swift; sourceTree = "<group>"; };
 		F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailModel.swift; sourceTree = "<group>"; };
 		F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailTopView.swift; sourceTree = "<group>"; };
@@ -446,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */,
+				F167138E1FA078EF00394D7E /* ShareDemo */,
 				F16713861FA0690B00394D7E /* TableViewSectionHeaderDeleteDemo */,
 				F186BAB71F999DEF0082C8D5 /* DataCacheNetDemo */,
 				F1E5287A1F983A5E00F9A0DE /* ImageBrowserDemo */,
@@ -1141,6 +1144,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F167138E1FA078EF00394D7E /* ShareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F167138F1FA078FD00394D7E /* ShareViewController.swift */,
+			);
+			path = ShareDemo;
+			sourceTree = "<group>";
+		};
 		F186BAB01F999BDC0082C8D5 /* DaisyNet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1541,6 +1552,7 @@
 				F1FF1CFD1F5012C900BBD605 /* RegisterViewController.swift in Sources */,
 				F15CBDF91F45458D00BFEF23 /* HTTPTool.swift in Sources */,
 				F1CA64451F540D0600B6582D /* FeedDetailViewController.swift in Sources */,
+				F16713901FA078FD00394D7E /* ShareViewController.swift in Sources */,
 				F1F1FBCD1F64C2580069EB4D /* UploadFoodViewController.swift in Sources */,
 				F1FF1CF91F5008D100BBD605 /* LoginViewController.swift in Sources */,
 				F1EF32181F51627D004EA52C /* CategoryModel.swift in Sources */,
