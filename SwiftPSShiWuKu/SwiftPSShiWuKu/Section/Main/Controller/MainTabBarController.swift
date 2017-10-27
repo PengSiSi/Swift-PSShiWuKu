@@ -8,11 +8,23 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
+class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 
+    // 提示音
+    fileprivate lazy var soundEffect: SoundEffect = {
+        
+        
+        guard let filePath = Bundle.main.path(forResource: "tabbar1", ofType: "mp3") else {
+
+            fatalError("YepSoundEffect: file no found!")
+        }
+        return SoundEffect(fileURL: URL(fileURLWithPath: filePath))
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+        self.delegate = self
         addChildViewControllers()
     }
     
@@ -39,4 +51,15 @@ extension MainTabBarController {
         let nav = BaseNavigationController(rootViewController: childController)
         addChildViewController(nav)
     }
+    
+    // 监听TabBar的点击，这里不走
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        print("点击了。。。")
+    }
+    
+    // 监听TabBar的点击
+//    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+//        print("点击了。。。")
+//        self.soundEffect.play()
+//    }
 }

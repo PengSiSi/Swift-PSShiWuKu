@@ -90,6 +90,11 @@
 		F167FA0C1F94A6EE0098BC14 /* FeedHomeDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */; };
 		F167FA0E1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */; };
 		F167FA121F94AC310098BC14 /* FeedHomeDetailTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F167FA111F94AC310098BC14 /* FeedHomeDetailTopView.xib */; };
+		F170C3671FA19180005D4ACF /* SearchDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170C3661FA19180005D4ACF /* SearchDemoViewController.swift */; };
+		F170C36B1FA1CDCD005D4ACF /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170C36A1FA1CDCD005D4ACF /* UIFont+Extension.swift */; };
+		F170C36E1FA1CFBC005D4ACF /* SafeDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170C36D1FA1CFBC005D4ACF /* SafeDispatch.swift */; };
+		F170C3711FA1D9D1005D4ACF /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170C3701FA1D9D1005D4ACF /* SoundEffect.swift */; };
+		F172C3781FA2BA9200E8347A /* tabbar1.mp3 in Sources */ = {isa = PBXBuildFile; fileRef = F172C3771FA2B9E700E8347A /* tabbar1.mp3 */; };
 		F186BABC1F999E1A0082C8D5 /* DataCacheNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BABB1F999E1A0082C8D5 /* DataCacheNetViewController.swift */; };
 		F186BABE1F99BDC20082C8D5 /* DaisyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB21F999BDC0082C8D5 /* DaisyLog.swift */; };
 		F186BABF1F99BDC20082C8D5 /* DaisyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB31F999BDC0082C8D5 /* DaisyNet.swift */; };
@@ -267,6 +272,12 @@
 		F167FA0B1F94A6EE0098BC14 /* FeedHomeDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailModel.swift; sourceTree = "<group>"; };
 		F167FA0D1F94AC1A0098BC14 /* FeedHomeDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHomeDetailTopView.swift; sourceTree = "<group>"; };
 		F167FA111F94AC310098BC14 /* FeedHomeDetailTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHomeDetailTopView.xib; sourceTree = "<group>"; };
+		F170C3661FA19180005D4ACF /* SearchDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDemoViewController.swift; sourceTree = "<group>"; };
+		F170C36A1FA1CDCD005D4ACF /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		F170C36D1FA1CFBC005D4ACF /* SafeDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDispatch.swift; sourceTree = "<group>"; };
+		F170C3701FA1D9D1005D4ACF /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
+		F170C3731FA1DB73005D4ACF /* tabbar.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tabbar.m4a; sourceTree = "<group>"; };
+		F172C3771FA2B9E700E8347A /* tabbar1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tabbar1.mp3; sourceTree = "<group>"; };
 		F186BAB11F999BDC0082C8D5 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		F186BAB21F999BDC0082C8D5 /* DaisyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyLog.swift; sourceTree = "<group>"; };
 		F186BAB31F999BDC0082C8D5 /* DaisyNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyNet.swift; sourceTree = "<group>"; };
@@ -448,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				F1581BA71F96EB8C001E65BD /* MyTestViewController.swift */,
+				F170C3651FA19172005D4ACF /* SearchDemo */,
 				F167138E1FA078EF00394D7E /* ShareDemo */,
 				F16713861FA0690B00394D7E /* TableViewSectionHeaderDeleteDemo */,
 				F186BAB71F999DEF0082C8D5 /* DataCacheNetDemo */,
@@ -603,6 +615,7 @@
 		F15CBCFD1F45458D00BFEF23 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F170C3681FA1CD90005D4ACF /* UIFont */,
 				F15CBCFE1F45458D00BFEF23 /* UIApplication */,
 				F15CBD001F45458D00BFEF23 /* UIBarButtonItem */,
 				F15CBD021F45458D00BFEF23 /* UIColor */,
@@ -702,6 +715,7 @@
 		F15CBD141F45458D00BFEF23 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F170C3721FA1DB4F005D4ACF /* Sound */,
 				F15CBD151F45458D00BFEF23 /* Global */,
 				F15CBD161F45458D00BFEF23 /* Image */,
 				F15CBD171F45458D00BFEF23 /* Json */,
@@ -745,6 +759,8 @@
 		F15CBD6F1F45458D00BFEF23 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				F170C36F1FA1D9C8005D4ACF /* SoundEffect */,
+				F170C36C1FA1CFB6005D4ACF /* SafeDispatch */,
 				F186BAB01F999BDC0082C8D5 /* DaisyNet */,
 				F1E528781F98399900F9A0DE /* HJImageBrowser */,
 				F10CD3AF1F6287A7000F352D /* CustomPickerView */,
@@ -1152,6 +1168,47 @@
 			path = ShareDemo;
 			sourceTree = "<group>";
 		};
+		F170C3651FA19172005D4ACF /* SearchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F170C3661FA19180005D4ACF /* SearchDemoViewController.swift */,
+			);
+			path = SearchDemo;
+			sourceTree = "<group>";
+		};
+		F170C3681FA1CD90005D4ACF /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				F170C36A1FA1CDCD005D4ACF /* UIFont+Extension.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		F170C36C1FA1CFB6005D4ACF /* SafeDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				F170C36D1FA1CFBC005D4ACF /* SafeDispatch.swift */,
+			);
+			path = SafeDispatch;
+			sourceTree = "<group>";
+		};
+		F170C36F1FA1D9C8005D4ACF /* SoundEffect */ = {
+			isa = PBXGroup;
+			children = (
+				F170C3701FA1D9D1005D4ACF /* SoundEffect.swift */,
+			);
+			path = SoundEffect;
+			sourceTree = "<group>";
+		};
+		F170C3721FA1DB4F005D4ACF /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				F172C3771FA2B9E700E8347A /* tabbar1.mp3 */,
+				F170C3731FA1DB73005D4ACF /* tabbar.m4a */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		F186BAB01F999BDC0082C8D5 /* DaisyNet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1540,6 +1597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F172C3781FA2BA9200E8347A /* tabbar1.mp3 in Sources */,
 				F186BAC31F99C0E70082C8D5 /* CacheManager.swift in Sources */,
 				F186BAC21F99C0CB0082C8D5 /* DownloadManager.swift in Sources */,
 				F186BAC11F99C0AD0082C8D5 /* RequestManager.swift in Sources */,
@@ -1599,8 +1657,10 @@
 				F1581BC81F973856001E65BD /* TableViewCell.swift in Sources */,
 				F15CBDFE1F45458D00BFEF23 /* WMFooldView.m in Sources */,
 				F15CBDB51F45458D00BFEF23 /* UIDevice+Extension.swift in Sources */,
+				F170C3671FA19180005D4ACF /* SearchDemoViewController.swift in Sources */,
 				F15CBE001F45458D00BFEF23 /* WMMenuView.m in Sources */,
 				F1BEAA251F553D1A007DA0A3 /* FeedKnowledageModel.swift in Sources */,
+				F170C36E1FA1CFBC005D4ACF /* SafeDispatch.swift in Sources */,
 				F1EF32141F514AAC004EA52C /* HomeSectionHeaderView.swift in Sources */,
 				F1581BA81F96EB8C001E65BD /* MyTestViewController.swift in Sources */,
 				F1B16A381F63606B00A72F83 /* DateLmyExtension.swift in Sources */,
@@ -1632,6 +1692,7 @@
 				F1581BA61F96EA41001E65BD /* BMPlayerDemoViewController.swift in Sources */,
 				F167138D1FA069A000394D7E /* SwipeOutSectionHeaderView.swift in Sources */,
 				F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */,
+				F170C3711FA1D9D1005D4ACF /* SoundEffect.swift in Sources */,
 				F1581BCA1F973C85001E65BD /* TableViewCell1.swift in Sources */,
 				F1B16A461F636E0F00A72F83 /* UIButton+Extension.swift in Sources */,
 				F15CBE031F45458D00BFEF23 /* WMPageController.m in Sources */,
@@ -1653,6 +1714,7 @@
 				F10C84621F5BF6B1000DDB83 /* HistorySearchTableViewCell.swift in Sources */,
 				F15CBE341F45474C00BFEF23 /* MineViewController.swift in Sources */,
 				F167FA0A1F94A5330098BC14 /* FeedHomeDetailViewController.swift in Sources */,
+				F170C36B1FA1CDCD005D4ACF /* UIFont+Extension.swift in Sources */,
 				F1CA643D1F53FE5900B6582D /* FeedEvaluateViewController.swift in Sources */,
 				F15CBDB01F45458D00BFEF23 /* NSDate+Extension.swift in Sources */,
 			);

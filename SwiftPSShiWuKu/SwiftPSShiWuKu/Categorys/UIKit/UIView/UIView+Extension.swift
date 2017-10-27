@@ -92,4 +92,69 @@ extension UIView {
         layer.addSublayer(maskLayer)
         layer.mask = maskLayer
     }
+    
+    /// 扩展UIView增加抖动方法
+    ///
+    /// - Parameters:
+    ///   - direction: 抖动方向（默认是水平方向）
+    ///   - times: 抖动次数（默认6次）
+    ///   - interval: 每次抖动时间（默认0.2秒）
+    ///   - delta: 抖动偏移量（默认4）
+    ///   - completion: 抖动动画结束后的回调
+    
+    public enum ShakeDirection {
+        case horizontal // 水平
+        case vertical // 垂直
+    }
+    
+    public func shake(direction: ShakeDirection = .horizontal, times: Int = 6, interval: TimeInterval = 0.2, delta: CGFloat = 4, completion: (() -> Void)? = nil) {
+        //播放动画
+        UIView.animate(withDuration: interval, animations: { () -> Void in
+            switch direction {
+            case .horizontal:
+                self.layer.setAffineTransform( CGAffineTransform(translationX: delta, y: 0))
+                break
+            case .vertical:
+                self.layer.setAffineTransform( CGAffineTransform(translationX: 0, y: delta))
+                break
+            }
+        }) { (complete) -> Void in
+            //如果当前是最后一次抖动，则将位置还原，并调用完成回调函数
+            if (times == 0) {
+                UIView.animate(withDuration: interval, animations: { () -> Void in
+                    self.layer.setAffineTransform(CGAffineTransform.identity)
+                }, completion: { (complete) -> Void in
+                    completion?()
+                })
+            }
+                //如果当前不是最后一次抖动，则继续播放动画（总次数减1，偏移位置变成相反的）
+            else {
+                self.shake(direction: direction, times: times - 1,  interval: interval, delta: delta * -1, completion:completion)
+            }
+        }
+    }
+
+    // 加载动画-往右扫描
+    public func startShimmering() {
+        let light = UIColor.white.withAlphaComponent(0.3).cgColor
+        let dark = UIColor.black.cgColor
+        
+        let gradient: CAGradientLayer = CAGradientLayer.init(layer: (Any).self)
+        gradient.colors = [dark, light, dark]
+        gradient.frame = CGRect(x: -self.bounds.size.width, y: 0, width: 3*self.bounds.size.width, height: self.bounds.size.height)
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
+        gradient.locations = [0.0, 0.5, 1.0]
+        self.layer.mask = gradient
+        
+        let animation: CABasicAnimation = CABasicAnimation.init(keyPath: "locations")
+        animation.fromValue = [0.0, 0.1, 0.2]
+        animation.toValue   = [0.8, 0.9, 1.0]
+        
+        
+        animation.duration = 2
+        animation.repeatCount = Float.infinity
+        
+        gradient.add(animation, forKey: "shimmer")
+    }
 }
