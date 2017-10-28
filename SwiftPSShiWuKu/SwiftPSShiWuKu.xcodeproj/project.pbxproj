@@ -95,6 +95,8 @@
 		F170C36E1FA1CFBC005D4ACF /* SafeDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170C36D1FA1CFBC005D4ACF /* SafeDispatch.swift */; };
 		F170C3711FA1D9D1005D4ACF /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170C3701FA1D9D1005D4ACF /* SoundEffect.swift */; };
 		F172C3781FA2BA9200E8347A /* tabbar1.mp3 in Sources */ = {isa = PBXBuildFile; fileRef = F172C3771FA2B9E700E8347A /* tabbar1.mp3 */; };
+		F172C3821FA32B2A00E8347A /* AdvertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C3801FA32B2A00E8347A /* AdvertiseViewController.swift */; };
+		F172C3831FA32B2A00E8347A /* AdvertiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F172C3811FA32B2A00E8347A /* AdvertiseViewController.xib */; };
 		F186BABC1F999E1A0082C8D5 /* DataCacheNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BABB1F999E1A0082C8D5 /* DataCacheNetViewController.swift */; };
 		F186BABE1F99BDC20082C8D5 /* DaisyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB21F999BDC0082C8D5 /* DaisyLog.swift */; };
 		F186BABF1F99BDC20082C8D5 /* DaisyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186BAB31F999BDC0082C8D5 /* DaisyNet.swift */; };
@@ -278,6 +280,12 @@
 		F170C3701FA1D9D1005D4ACF /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 		F170C3731FA1DB73005D4ACF /* tabbar.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tabbar.m4a; sourceTree = "<group>"; };
 		F172C3771FA2B9E700E8347A /* tabbar1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tabbar1.mp3; sourceTree = "<group>"; };
+		F172C37A1FA3179000E8347A /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		F172C37B1FA3179000E8347A /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		F172C37C1FA3179000E8347A /* Runtime+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Runtime+Extension.swift"; sourceTree = "<group>"; };
+		F172C37D1FA3179000E8347A /* UINavigationBar+FixSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+FixSpace.swift"; sourceTree = "<group>"; };
+		F172C3801FA32B2A00E8347A /* AdvertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertiseViewController.swift; sourceTree = "<group>"; };
+		F172C3811FA32B2A00E8347A /* AdvertiseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertiseViewController.xib; sourceTree = "<group>"; };
 		F186BAB11F999BDC0082C8D5 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		F186BAB21F999BDC0082C8D5 /* DaisyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyLog.swift; sourceTree = "<group>"; };
 		F186BAB31F999BDC0082C8D5 /* DaisyNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaisyNet.swift; sourceTree = "<group>"; };
@@ -586,6 +594,7 @@
 		F15CBCF61F45458D00BFEF23 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				F172C3791FA3179000E8347A /* Extension */,
 				F1B16A341F63606B00A72F83 /* Custom */,
 				F15CBCF71F45458D00BFEF23 /* AVFoundation */,
 				F15CBCF81F45458D00BFEF23 /* Foundation */,
@@ -1001,6 +1010,8 @@
 			children = (
 				F1FF1CF81F5008D100BBD605 /* LoginViewController.swift */,
 				F1FF1CFC1F5012C900BBD605 /* RegisterViewController.swift */,
+				F172C3801FA32B2A00E8347A /* AdvertiseViewController.swift */,
+				F172C3811FA32B2A00E8347A /* AdvertiseViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1207,6 +1218,17 @@
 				F170C3731FA1DB73005D4ACF /* tabbar.m4a */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		F172C3791FA3179000E8347A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F172C37A1FA3179000E8347A /* Array+Extension.swift */,
+				F172C37B1FA3179000E8347A /* CALayer+Extension.swift */,
+				F172C37C1FA3179000E8347A /* Runtime+Extension.swift */,
+				F172C37D1FA3179000E8347A /* UINavigationBar+FixSpace.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F186BAB01F999BDC0082C8D5 /* DaisyNet */ = {
@@ -1424,6 +1446,7 @@
 				F15CBDC11F45458D00BFEF23 /* YMSharePlist.plist in Resources */,
 				F167FA121F94AC310098BC14 /* FeedHomeDetailTopView.xib in Resources */,
 				F1E528851F983B1400F9A0DE /* ImageBrowserTableViewCell.xib in Resources */,
+				F172C3831FA32B2A00E8347A /* AdvertiseViewController.xib in Resources */,
 				F11355121F42E958003CBF4E /* LaunchScreen.storyboard in Resources */,
 				F113550F1F42E958003CBF4E /* Assets.xcassets in Resources */,
 				F1CA64411F53FFA800B6582D /* FeedEvaluateCell.xib in Resources */,
@@ -1690,6 +1713,7 @@
 				F11355081F42E958003CBF4E /* AppDelegate.swift in Sources */,
 				F1581BC61F97376E001E65BD /* TableViewRowHeightVC.swift in Sources */,
 				F1581BA61F96EA41001E65BD /* BMPlayerDemoViewController.swift in Sources */,
+				F172C3821FA32B2A00E8347A /* AdvertiseViewController.swift in Sources */,
 				F167138D1FA069A000394D7E /* SwipeOutSectionHeaderView.swift in Sources */,
 				F10C84651F5C045A000DDB83 /* QRCodeScanViewController.swift in Sources */,
 				F170C3711FA1D9D1005D4ACF /* SoundEffect.swift in Sources */,

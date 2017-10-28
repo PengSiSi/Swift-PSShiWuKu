@@ -25,15 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
             let guideVc = GuideViewController()
             guideVc.tapBlock = {
                 print("进入主页")
+                let AdvertiseVC = AdvertiseViewController()
                 let mainTabBarVc = MainTabBarController()
                 mainTabBarVc.delegate = self
-                self.window?.rootViewController = mainTabBarVc
+                self.window?.rootViewController = AdvertiseVC
             }
             window?.rootViewController = guideVc
         } else {
             let mainTabBarVc = MainTabBarController()
+            let AdvertiseVC = AdvertiseViewController()
             mainTabBarVc.delegate = self
-            window?.rootViewController = mainTabBarVc
+            window?.rootViewController = AdvertiseVC
         }
         window?.makeKeyAndVisible()
         return true
